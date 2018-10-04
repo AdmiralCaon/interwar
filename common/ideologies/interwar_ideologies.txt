@@ -26,4 +26,13 @@ ideologies = {
 			}
 		}
 	}
+	
+	neutrality = {
+		
+		types = {
+		
+			imperialism = {
+			}
+		}
+	}
 }

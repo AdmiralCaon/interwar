@@ -204,5 +204,34 @@ ideas = {
 				stability_factor = -0.10
 			}
 		}
+		
+		ITA_collapsed_government = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+		
+		ITA_betrayal_of_london = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = constitutional_guarantee
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
 	}
 }

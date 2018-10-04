@@ -35,9 +35,9 @@
 	create_country_leader = {
 		name = "Taisho"
 		desc = "POLITICS_TAISHO_DESC"
-		picture = "Portrait_Japan_Hirohito.dds"
+		picture = "Portrait_Japan_Taisho.dds"
 		expire = "1989.1.1"
-		ideology = fascism_ideology
+		ideology = imperialism
 		traits = {
 			warrior_code
 		}

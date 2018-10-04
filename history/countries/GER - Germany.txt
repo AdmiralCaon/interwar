@@ -2,6 +2,8 @@
 
 1919.6.28 = {
 
+	set_cosmetic_tag = GER_1919
+
 	add_ideas = {
 		GER_friedrich_ebert
 	}
