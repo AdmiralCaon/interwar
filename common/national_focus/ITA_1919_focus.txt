@@ -34,7 +34,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 80
 		}
 	}
 	
@@ -60,13 +59,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 80
 		}
 	}
 	
 	focus = {
 		id = ITA_government_collapse
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_rom_abdicate
 		prerequisite = { focus = ITA_impresa_die_fiume }
 		relative_position_id = ITA_the_london_betrayal
 		x = 0
@@ -86,7 +84,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 80
 		}
 	}
 	
@@ -112,7 +109,943 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 80
+		}
+	}
+	
+	# FASCISM
+	
+	focus = {
+		id = ITA_the_anti_socialist_coalition
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ITA_the_1919_elections }
+		mutually_exclusive = { focus = ITA_the_coalition_fails }
+		relative_position_id = ITA_the_1919_elections
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_combat_the_strikes
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ITA_the_anti_socialist_coalition }
+		relative_position_id = ITA_the_anti_socialist_coalition
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_address_the_food_problem
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ITA_combat_the_strikes }
+		relative_position_id = ITA_the_anti_socialist_coalition
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_turn_a_blind_eye_to_the_blackshirts
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = ITA_address_the_food_problem }
+		relative_position_id = ITA_the_anti_socialist_coalition
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_the_1921_elections
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = ITA_turn_a_blind_eye_to_the_blackshirts }
+		relative_position_id = ITA_the_anti_socialist_coalition
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_found_the_pnf
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = ITA_the_1921_elections }
+		relative_position_id = ITA_the_anti_socialist_coalition
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_march_on_rome
+		icon = GFX_focus_generic_italy_first
+		prerequisite = { focus = ITA_found_the_pnf }
+		relative_position_id = ITA_the_anti_socialist_coalition
+		x = 0
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_the_acerbo_law
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ITA_march_on_rome }
+		relative_position_id = ITA_the_anti_socialist_coalition
+		x = 0
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	# COMMUNISM
+	
+	focus = {
+		id = ITA_the_coalition_fails
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = ITA_the_1919_elections }
+		mutually_exclusive = { focus = ITA_the_anti_socialist_coalition }
+		relative_position_id = ITA_the_1919_elections
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_recognise_the_factory_councils
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = ITA_the_coalition_fails }
+		relative_position_id = ITA_the_coalition_fails
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_support_the_red_army_of_turin
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = ITA_recognise_the_factory_councils }
+		relative_position_id = ITA_the_coalition_fails
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_deal_with_the_blackshirts
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = { focus = ITA_support_the_red_army_of_turin }
+		relative_position_id = ITA_the_coalition_fails
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_reign_in_the_radicals
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = ITA_deal_with_the_blackshirts }
+		mutually_exclusive = { focus = ITA_expel_the_reformists }
+		relative_position_id = ITA_deal_with_the_blackshirts
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_compromise_with_the_workers
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ITA_reign_in_the_radicals }
+		relative_position_id = ITA_reign_in_the_radicals
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_nationalisation_effort
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = ITA_compromise_with_the_workers }
+		relative_position_id = ITA_reign_in_the_radicals
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_expel_the_reformists
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = ITA_deal_with_the_blackshirts }
+		mutually_exclusive = { focus = ITA_reign_in_the_radicals }
+		relative_position_id = ITA_deal_with_the_blackshirts
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_closer_ties_to_moscow
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = ITA_expel_the_reformists }
+		relative_position_id = ITA_expel_the_reformists
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_redistribute_the_land
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = ITA_closer_ties_to_moscow }
+		relative_position_id = ITA_expel_the_reformists
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_outlaw_the_opposition
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = ITA_redistribute_the_land }
+		relative_position_id = ITA_expel_the_reformists
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_empower_the_workers
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = ITA_outlaw_the_opposition }
+		relative_position_id = ITA_outlaw_the_opposition
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_deal_with_the_king
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		prerequisite = { focus = ITA_outlaw_the_opposition }
+		relative_position_id = ITA_outlaw_the_opposition
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_proclaim_the_socialist_republic_of_italy
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ITA_deal_with_the_king focus = ITA_empower_the_workers }
+		relative_position_id = ITA_outlaw_the_opposition
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_the_turkish_question
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 14
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_the_albanian_question
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = ITA_the_turkish_question }
+		relative_position_id = ITA_the_turkish_question
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_the_treaty_of_rapallo
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = ITA_the_albanian_question }
+		relative_position_id = ITA_the_turkish_question
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_withdraw_from_turkey
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = ITA_the_treaty_of_rapallo }
+		relative_position_id = ITA_the_turkish_question
+		x = -1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_secretly_arm_the_turks
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = ITA_withdraw_from_turkey }
+		relative_position_id = ITA_the_turkish_question
+		x = -1
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_the_corfu_incident
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ITA_withdraw_from_turkey }
+		relative_position_id = ITA_the_turkish_question
+		x = -1
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	# INDUSTRY
+	
+	focus = {
+		id = ITA_address_the_economy
+		icon = GFX_goal_generic_construct_civilian
+		x = 18
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	# LIBERALISATION
+	
+	focus = {
+		id = ITA_liberalise_the_economy
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = ITA_address_the_economy }
+		mutually_exclusive = { focus = ITA_nationalisation_is_the_way }
+		relative_position_id = ITA_address_the_economy
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_austerity_measures
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ITA_liberalise_the_economy }
+		relative_position_id = ITA_liberalise_the_economy
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_cut_taxes
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ITA_liberalise_the_economy }
+		relative_position_id = ITA_liberalise_the_economy
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_privatise_unprofitable_ventures
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = ITA_liberalise_the_economy }
+		relative_position_id = ITA_liberalise_the_economy
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_increase_intervention
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ITA_cut_taxes focus = ITA_austerity_measures focus = ITA_privatise_unprofitable_ventures }
+		relative_position_id = ITA_cut_taxes
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_tackle_inflation
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { focus = ITA_increase_intervention }
+		relative_position_id = ITA_increase_intervention
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_curb_the_trade_unions
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = ITA_increase_intervention }
+		relative_position_id = ITA_increase_intervention
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	# NATIONALISATION
+	
+	focus = {
+		id = ITA_nationalisation_is_the_way
+		icon = GFX_goal_generic_soviet_construction
+		prerequisite = { focus = ITA_address_the_economy }
+		mutually_exclusive = { focus = ITA_liberalise_the_economy }
+		relative_position_id = ITA_address_the_economy
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
 		}
 	}
 }
