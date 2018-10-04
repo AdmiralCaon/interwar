@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 
-		ITA_food_riots = {			
+		ITA_lingering_famine = {		
 			
 			allowed = {
 				original_tag = "ITA"
@@ -29,6 +29,179 @@ ideas = {
 			
 			traits = {
 				the_soldier_king			
+			}
+		}
+		
+		ITA_biennio_rosso = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = generic_communist_army
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.5
+				consumer_goods_factor = 0.2
+				conscription_factor = -0.15
+			}
+		}
+		
+		ITA_economic_disaster = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = chi_hyper_inflation5
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_factory_max_efficiency_factor = -0.5
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		
+		ITA_ethnic_tensions = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = FRA_matignon_agreements
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+				conscription_factor = -0.15
+			}
+		}
+		
+		ITA_albanian_opposition = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = chi_war_of_resistance
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.15
+			}
+		}
+		
+		ITA_widespread_strikes = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		ITA_government_divide = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = generic_disjointed_gov
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+			}
+		}
+		
+		ITA_demobilising_army = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = generic_army_problems
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		
+		ITA_worker_resistance = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = -0.15
+			}
+		}
+		
+		ITA_increased_food_imports = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = generic_agrarian_reform
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		ITA_street_violence = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = ast_classify_aliens
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.25
+				conscription_factor = -0.15
+			}
+		}
+		
+		ITA_confused_bureaucracy = {
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = generic_pp_unity_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
 			}
 		}
 	}

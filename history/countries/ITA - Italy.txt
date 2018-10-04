@@ -25,7 +25,14 @@ set_war_support = 0.7
 	
 	add_ideas = {
 		ITA_victor_emmanuel
-		ITA_food_riots
+		ITA_lingering_famine
+		ITA_biennio_rosso
+		ITA_economic_disaster
+		ITA_ethnic_tensions
+		ITA_albanian_opposition
+		ITA_widespread_strikes
+		ITA_government_divide
+		ITA_demobilising_army
 	}
 	
 	set_politics = {

@@ -35,7 +35,7 @@ bookmarks = {
 			history = "GER_BRIDGE_OF_THE_MILLENNIUM_DESC"
 			ideology = democratic
 			ideas = {
-				GER_friedrich_ebert
+				
 			}
 			focuses = {
 			}
@@ -44,8 +44,7 @@ bookmarks = {
 			history = "ITA_BRIDGE_OF_THE_MILLENNIUM_DESC"
 			ideology = neutrality
 			ideas = {
-				ITA_victor_emmanuel
-				ITA_food_riots
+				
 			}	
 			focuses = {
 			}		

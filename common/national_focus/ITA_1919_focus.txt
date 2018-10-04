@@ -162,6 +162,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = {
+				ITA_widespread_strikes
+			}
+			add_timed_idea = { idea = ITA_worker_resistance days = 180 }
 		}
 	}
 	
@@ -187,6 +191,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = {
+				ITA_lingering_famine
+			}
+			add_timed_idea = { idea = ITA_increased_food_imports days = 180 }
 		}
 	}
 	
@@ -212,6 +220,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = {
+				ITA_biennio_rosso
+			}
+			add_timed_idea = { idea = ITA_street_violence days = 180 }
+			add_popularity = { ideology = communism popularity = -0.15 }
 		}
 	}
 	
@@ -262,6 +275,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 100
+			add_popularity = { ideology = fascism popularity = 0.20 }
+			set_party_name = { ideology = fascism long_name = ITA_national_fascist_party_long name = ITA_national_fascist_party }
 		}
 	}
 	
@@ -280,13 +296,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			
+			date > 1922.1.1
 		}
 		
 		bypass = {
 		}
 
 		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 		}
 	}
 	
@@ -312,6 +332,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_popularity = { ideology = communism popularity = -0.20 }
+			add_popularity = { ideology = democratic popularity = -0.20 }
+			remove_ideas = {
+				ITA_government_divide
+			}
+			add_timed_idea = { idea = ITA_confused_bureaucracy days = 180 }
 		}
 	}
 	
