@@ -1,20 +1,28 @@
 ﻿capital = 282
 
 1919.6.28 = {
+
+	set_party_name = { ideology = communism long_name = JAP_yuaikai_ name = JAP_yuaikai }
+	set_party_name = { ideology = fascism long_name = JAP_genyosha name = JAP_genyosha }
+
+	set_cosmetic_tag = JAP_1919
 	set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 0
+				popularity = 15
 			}
 
 			fascism = {
-				popularity = 100
+				popularity = 10
 			}
 			
 			communism = {
-				popularity = 0
-				#banned = no #default is no
+				popularity = 36
+			}
+			
+			neutrality = {
+				popularity = 39
 			}
 		}
 		
@@ -22,6 +30,17 @@
 		last_election = "1917.4.20"
 		election_frequency = 48
 		elections_allowed = yes
+	}
+	
+	create_country_leader = {
+		name = "Taisho"
+		desc = "POLITICS_TAISHO_DESC"
+		picture = "Portrait_Japan_Hirohito.dds"
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			warrior_code
+		}
 	}
 }
 	
@@ -712,6 +731,7 @@ create_navy_leader = {
 
 ### VARIANTS ###
 	# 1936 Start #
+	1936.1.1 = {
 		### Carrier Variants
 		create_equipment_variant = {
 			name = "Akagi Class"
@@ -813,7 +833,7 @@ create_navy_leader = {
 			}
 			obsolete = yes
 		}	
-
+}
 	# 1939 Start #			
 	1939.1.1 = {
 		### Carrier Variants

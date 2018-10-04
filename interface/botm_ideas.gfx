@@ -1,0 +1,7 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_friedrich_ebert"
+		texturefile = "gfx/interface/ideas/idea_friedrich_ebert.dds"
+	}		
+}

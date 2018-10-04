@@ -5,7 +5,8 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 1
+			add = 11
+			tag = ITA
 		}
 	}
 	
@@ -15,9 +16,87 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_the_london_betrayal
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		x = 9
 		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+	
+	focus = {
+		id = ITA_impresa_die_fiume
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ITA_the_london_betrayal }
+		relative_position_id = ITA_the_london_betrayal
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+	
+	focus = {
+		id = ITA_government_collapse
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ITA_impresa_die_fiume }
+		relative_position_id = ITA_the_london_betrayal
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+	
+	focus = {
+		id = ITA_the_1919_elections
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = ITA_government_collapse }
+		relative_position_id = ITA_the_london_betrayal
+		x = 0
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 90

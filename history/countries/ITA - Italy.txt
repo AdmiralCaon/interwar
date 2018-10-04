@@ -7,9 +7,6 @@ set_stability = 0.6
 set_war_support = 0.7
 
 1919.6.28 = {
-
-	load_focus_tree = ITA_1919_focus
-
 	set_cosmetic_tag = ITA_1919
 	set_technology = {
 		infantry_weapons = 1
@@ -27,7 +24,7 @@ set_war_support = 0.7
 	}
 	
 	add_ideas = {
-		victor_emmanuel
+		ITA_victor_emmanuel
 		ITA_food_riots
 	}
 	

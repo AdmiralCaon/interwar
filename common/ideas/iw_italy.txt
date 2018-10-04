@@ -16,5 +16,20 @@ ideas = {
 				consumer_goods_factor = 0.2
 			}
 		}
+		
+		ITA_victor_emmanuel = {
+					
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = victor_emmanuel
+			
+			removal_cost = -1
+			
+			traits = {
+				the_soldier_king			
+			}
+		}
 	}
 }

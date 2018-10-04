@@ -43,7 +43,7 @@ bookmarks = {
 			history = "ITA_BRIDGE_OF_THE_MILLENNIUM_DESC"
 			ideology = neutrality
 			ideas = {
-				victor_emmanuel
+				ITA_victor_emmanuel
 				ITA_food_riots
 			}	
 			focuses = {

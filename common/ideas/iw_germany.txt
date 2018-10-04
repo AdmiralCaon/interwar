@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		
+		GER_friedrich_ebert = {
+					
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			picture = friedrich_ebert
+			
+			removal_cost = -1
+			
+			traits = {
+				#			
+			}
+		}
+	}
+}

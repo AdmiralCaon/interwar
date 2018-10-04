@@ -2,6 +2,10 @@
 
 1919.6.28 = {
 
+	add_ideas = {
+		GER_friedrich_ebert
+	}
+
 	oob = "GER_1919"
 
 	set_technology = {
@@ -57,29 +61,28 @@
 # Starting tech
 1936.1.1 = {
 
-set_politics = {
+	set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 20
-		}
+		parties = {
+			democratic = { 
+				popularity = 20
+			}
 
-		fascism = {
-			popularity = 60
+			fascism = {
+				popularity = 60
+			}
+			
+			communism = {
+				popularity = 20
+				banned = yes #default is no
+			}
 		}
 		
-		communism = {
-			popularity = 20
-			banned = yes #default is no
-		}
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
 	}
-	
-	ruling_party = fascism
-	last_election = "1933.3.5"
-	election_frequency = 48
-	elections_allowed = no
-
-}
 
 	oob = "GER_1936"
 	
@@ -121,7 +124,6 @@ set_politics = {
 		synth_oil_experiments = 1
 		transport = 1
 	}
-}
 
 
 
@@ -133,11 +135,28 @@ set_stability = 0.75
 set_war_support = 0.3
 
 #Trade
-create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
+	create_import = {
+			resource = tungsten
+			factories = 1
+			exporter = SWE
+	}
+
+create_faction = Axis
+add_to_faction = GER
+
+	add_ideas = {
+		sour_loser
+		general_staff
+		limited_exports
+		limited_conscription
+		partial_economic_mobilisation
+	}
+add_ideas = GER_mefo_bills_1
+
+activate_mission = GER_mefo_bills_mission
+
 }
+
 
 1939.1.1 = {
 	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
@@ -291,21 +310,6 @@ create_import = {
 
 	}
 }
-
-create_faction = Axis
-add_to_faction = GER
-
-
-add_ideas = {
-	sour_loser
-	general_staff
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-}
-add_ideas = GER_mefo_bills_1
-
-activate_mission = GER_mefo_bills_mission
 
 create_country_leader = {
 	name = "Adolf Hitler"
