@@ -1,0 +1,29 @@
+ideologies = {
+	
+	democratic = {
+	
+		types = {
+			
+			republicanism = {
+			}
+		}
+	}
+	
+	fascism = {
+		
+		types = {
+		
+			nationalism_ideology = {
+			}
+		}
+	}
+	
+	communism = {
+		
+		types = {
+		
+			revolutionary_socialism = {
+			}
+		}
+	}
+}

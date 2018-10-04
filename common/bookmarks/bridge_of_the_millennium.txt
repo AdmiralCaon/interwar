@@ -1,0 +1,81 @@
+bookmarks = {
+	bookmark = {
+		name = "BRIDGE_OF_THE_MILLENNIUM_NAME"
+		desc = "BRIDGE_OF_THE_MILLENNIUM_DESC"
+		date = 1919.6.28.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_BRIDGE_OF_THE_MILLENNIUM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"USA"={
+			history = "USA_BRIDGE_OF_THE_MILLENNIUM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ENG"={
+			history = "ENG_BRIDGE_OF_THE_MILLENNIUM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"GER"={
+			history = "GER_BRIDGE_OF_THE_MILLENNIUM_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ITA"={
+			history = "ITA_BRIDGE_OF_THE_MILLENNIUM_DESC"
+			ideology = neutrality
+			ideas = {
+				victor_emmanuel
+				ITA_food_riots
+			}	
+			focuses = {
+			}		
+		}
+		"JAP"={
+			history = "JAP_BRIDGE_OF_THE_MILLENNIUM_DESC"
+			ideology = democratic
+			ideas = {
+			}	
+			focuses = {
+			}			
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

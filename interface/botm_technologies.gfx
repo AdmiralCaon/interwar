@@ -1,0 +1,175 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_light_tank_1922_medium"
+		texturefile = "gfx/interface/technologies/light_tank_1922.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_light_tank_1928_medium"
+		texturefile = "gfx/interface/technologies/light_tank_1928.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_light_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/light_tank_1931.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_light_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/light_tank_1931.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_gwmediumtank_medium"
+		texturefile = "gfx/interface/technologies/gwmediumtank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_gwheavytank_medium"
+		texturefile = "gfx/interface/technologies/gwheavytank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_medium_tank_1926_medium"
+		texturefile = "gfx/interface/technologies/medium_tank_1926.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/heavy_tank_1931.dds" 
+	}
+
+	### ENG
+
+	SpriteType = {
+		name = "GFX_ENG_gwheavytank_medium"
+		texturefile = "gfx/interface/technologies/ENG_gwheavytank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_gwmediumtank_medium"
+		texturefile = "gfx/interface/technologies/ENG_gwmediumtank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_light_tank_1922_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_tank_1922.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_light_tank_1928_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_tank_1928.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_light_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_tank_1931.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_medium_tank_1926_medium"
+		texturefile = "gfx/interface/technologies/ENG_medium_tank_1926.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_heavy_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_tank_1931.dds" 
+	}
+
+	### GER
+
+	SpriteType = {
+		name = "GFX_GER_gwtank_medium"
+		texturefile = "gfx/interface/technologies/GER_gwtank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_gwmediumtank_medium"
+		texturefile = "gfx/interface/technologies/GER_gwmediumtank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_GER_gwheavytank_medium"
+		texturefile = "gfx/interface/technologies/GER_gwheavytank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_1922_medium"
+		texturefile = "gfx/interface/technologies/GER_light_tank_1922.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_GER_medium_tank_1926_medium"
+		texturefile = "gfx/interface/technologies/GER_medium_tank_1926.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_GER_light_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/GER_light_tank_1931.dds" 
+	}
+
+	### FRA
+
+	SpriteType = {
+		name = "GFX_FRA_gwmediumtank_medium"
+		texturefile = "gfx/interface/technologies/FRA_gwmediumtank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_gwheavytank_medium"
+		texturefile = "gfx/interface/technologies/FRA_gwheavytank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_light_tank_1928_medium"
+		texturefile = "gfx/interface/technologies/FRA_light_tank_1928.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_medium_tank_1926_medium"
+		texturefile = "gfx/interface/technologies/FRA_medium_tank_1926.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_light_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/FRA_light_tank_1931.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_light_tank_1922_medium"
+		texturefile = "gfx/interface/technologies/FRA_light_tank_1922.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_heavy_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/FRA_heavy_tank_1931.dds" 
+	}
+
+	### ITA
+
+	SpriteType = {
+		name = "GFX_ITA_light_tank_1922_medium"
+		texturefile = "gfx/interface/technologies/ITA_light_tank_1922.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_light_tank_1928_medium"
+		texturefile = "gfx/interface/technologies/ITA_light_tank_1928.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_light_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/ITA_light_tank_1931.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_gwmediumtank_medium"
+		texturefile = "gfx/interface/technologies/ITA_gwmediumtank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_gwheavytank_medium"
+		texturefile = "gfx/interface/technologies/ITA_gwheavytank.dds" 
+	}
+}
