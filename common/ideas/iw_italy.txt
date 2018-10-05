@@ -220,6 +220,8 @@ ideas = {
 			}
 		}
 		
+		
+		# Copy of Vittoria Mutilata
 		ITA_betrayal_of_london = {
 			
 			allowed = {
@@ -231,6 +233,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				democratic_acceptance = -75
+				communism_acceptance = -75
+				fascism_acceptance = 75
 			}
 		}
 	}

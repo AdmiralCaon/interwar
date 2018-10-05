@@ -34,7 +34,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_timed_idea = { idea = ITA_betrayal_of_london days = 180 }
+			add_ideas = {
+				ITA_betrayal_of_london
+			}
+			#add opinion modifiers to France and UK
 		}
 	}
 	
@@ -306,6 +309,35 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.30 }
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+	
+	focus = {
+		id = ITA_appoint_mussolini
+		icon = GFX_focus_GER_assassinate_mussolini
+		prerequisite = { focus = ITA_found_the_pnf }
+		relative_position_id = ITA_march_on_rome
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
@@ -316,10 +348,10 @@ focus_tree = {
 	focus = {
 		id = ITA_the_acerbo_law
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = ITA_march_on_rome }
-		relative_position_id = ITA_the_anti_socialist_coalition
+		prerequisite = { focus = ITA_appoint_mussolini }
+		relative_position_id = ITA_appoint_mussolini
 		x = 0
-		y = 7
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 90
@@ -341,6 +373,36 @@ focus_tree = {
 				ITA_government_divide
 			}
 			add_timed_idea = { idea = ITA_confused_bureaucracy days = 180 }
+		}
+	}
+	
+	# MONARCHISM
+	
+	focus = {
+		id = ITA_siege_of_rome
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = { focus = ITA_found_the_pnf }
+		relative_position_id = ITA_march_on_rome
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			start_civil_war = { 
+				ideology = fascism
+				size = 0.5
+			}
 		}
 	}
 	
