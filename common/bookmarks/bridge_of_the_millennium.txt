@@ -42,7 +42,7 @@ bookmarks = {
 		}
 		"ITA"={
 			history = "ITA_BRIDGE_OF_THE_MILLENNIUM_DESC"
-			ideology = neutrality
+			ideology = democratic
 			ideas = {
 				
 			}	
@@ -51,14 +51,14 @@ bookmarks = {
 		}
 		"JAP"={
 			history = "JAP_BRIDGE_OF_THE_MILLENNIUM_DESC"
-			ideology = democratic
+			ideology = neutrality
 			ideas = {
 			}	
 			focuses = {
 			}			
 		}
 		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
+			history = "SOV_BRIDGE_OF_THE_MILLENNIUM_DESC"
 			ideology = communism
 			ideas = {
 				
@@ -67,7 +67,20 @@ bookmarks = {
 				
 			}	
 		}
-
+	
+		# minors from DLC ####
+		"RUS"={
+			minor = yes
+			history = "RUS_BRIDGE_OF_THE_MILLENNIUM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				industrial_effort
+			}
+		}
+		
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}

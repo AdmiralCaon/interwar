@@ -3,5 +3,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_friedrich_ebert"
 		texturefile = "gfx/interface/ideas/idea_friedrich_ebert.dds"
-	}		
+	}
+
+	spriteType = {
+		name = "GFX_idea_armando_diaz"
+		texturefile = "gfx/interface/ideas/idea_armando_diaz.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ansaldo"
+		texturefile = "gfx/interface/ideas/idea_ansaldo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_benetti"
+		texturefile = "gfx/interface/ideas/idea_benetti.dds"
+	}
 }

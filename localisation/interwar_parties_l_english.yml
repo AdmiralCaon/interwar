@@ -17,3 +17,17 @@
  GER_german_national_peoples_party_long:0 "National People's Party"
  JAP_yuaikai:0 "Yuaikai"
  JAP_genyosha:0 "Gen'yōsha"
+ SOV_russian_communist_party:0 "Russian Communist Party"
+ ENG_liberal_party:0 "Liberal Party"
+ ENG_british_socialist_party:0 "BSP"
+ ENG_british_socialist_party_long:0 "British Socialist Party"
+ ENG_british_empire_union_long:0 "British Empire Union"
+ ENG_british_empire_union:0 "BEU"
+ ENG_national_party:0 "National Party"
+
+ RUS_communism_party:0 "SR"
+ RUS_communism_party_long:0 "Socialist Revolutionary Party"
+ RUS_democratic_party:0 "K-D"
+ RUS_democratic_party_long:0 "Constitutional Democratic Party"
+ RUS_neutrality_party:0 "Military dictatorship"
+ 

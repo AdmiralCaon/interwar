@@ -1,0 +1,19 @@
+leader_traits = {
+
+	
+##################################
+# Common Traits
+##################################
+	marked = { 
+		type = all
+		trait_type = personality_trait
+		
+		modifier = {
+			planning_speed = -0.10
+		}
+		
+		non_shared_modifier = {
+			experience_gain_factor = -0.10
+		}
+	}
+}

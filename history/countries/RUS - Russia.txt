@@ -1,0 +1,78 @@
+﻿capital = 571
+
+	OOB = "RUS_1936"
+
+	set_technology = {
+		infantry_weapons = 1
+		tech_support = 1
+		tech_recon = 1
+		gwtank = 1
+		gwheavytank = 1
+		gwmediumtank = 1
+		gw_fighter = 1
+		gw_bomber = 1
+	}
+
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 30
+			}
+
+			fascism = {
+				popularity = 0
+			}
+			
+			communism = {
+				popularity = 58
+			}
+			
+			neutrality = { 
+				popularity = 12
+			}
+		}
+		
+		ruling_party = neutrality
+		last_election = "1917.11.25"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+
+	set_convoys = 5
+
+	#Victor Emmanuel III of Italy after 39
+	create_country_leader = {
+		name = "Alexander Kolchak"
+		desc = "POLITICS_ALEXANDER_KOLCHAK_DESC"
+		picture = "Portrait_Russia_Alexander_Kolchak.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			#
+		}
+	}
+	
+	create_country_leader = {
+		name = "Andrei Argunov"
+		desc = "POLITICS_ANDREI_ARGUNOV_DESC"
+		picture = "Portrait_Russia_Andrei_Argunov.dds"
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {
+			#
+		}
+	}
+	
+	create_country_leader = {
+		name = "Pavel Milyukov"
+		desc = "POLITICS_PAVEL_MILYUKOV_DESC"
+		picture = "Portrait_Russia_Pavel_Milyukov.dds"
+		expire = "1965.1.1"
+		ideology = liberalism
+		traits = {
+			#
+		}
+	}
+}
+

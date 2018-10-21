@@ -319,9 +319,10 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_appoint_mussolini
-		icon = GFX_focus_GER_assassinate_mussolini
-		prerequisite = { focus = ITA_found_the_pnf }
+		icon = GFX_focus_ger_assassinate_mussolini
+		prerequisite = { focus = ITA_march_on_rome }
 		relative_position_id = ITA_march_on_rome
+		mutually_exclusive = { focus = ITA_siege_of_rome }
 		x = 1
 		y = 1
 		cost = 10
@@ -381,11 +382,12 @@ focus_tree = {
 	focus = {
 		id = ITA_siege_of_rome
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { focus = ITA_found_the_pnf }
+		prerequisite = { focus = ITA_march_on_rome }
 		relative_position_id = ITA_march_on_rome
+		mutually_exclusive = { focus = ITA_appoint_mussolini }
 		x = -1
 		y = 1
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 90
 		}

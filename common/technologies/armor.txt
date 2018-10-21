@@ -153,32 +153,6 @@ technologies = {
 		enable_equipments = {
 			light_tank_1928_equipment
 		}
-
-		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
 		
 		path = {
 			leads_to_tech = light_tank_1931
@@ -226,32 +200,6 @@ technologies = {
 
 		enable_equipments = {
 			light_tank_1931_equipment
-		}
-
-		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		
 		path = {
@@ -789,7 +737,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1918
+		start_year = 1926
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 0 }
@@ -830,6 +778,32 @@ technologies = {
 		enable_equipments = {
 			medium_tank_1926_equipment
 		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {	has_template_containing_unit = light_armor }
+				NOT = {	has_template_containing_unit = heavy_armor }
+				NOT = {	has_template_containing_unit = medium_armor }
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
 		
 		path = {
 			leads_to_tech = basic_medium_tank
@@ -842,12 +816,6 @@ technologies = {
 		folder = {
 			name = armour_folder
 			position = { x = 0 y = 4 }
-		}
-		
-		sub_technologies = {
-			basic_medium_td
-			basic_medium_art
-			basic_medium_spaa
 		}
 		
 		ai_will_do = {
@@ -1699,7 +1667,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1934
+		start_year = 1931
 		
 		folder = {
 			name = armour_folder

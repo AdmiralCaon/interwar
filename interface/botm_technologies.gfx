@@ -40,6 +40,56 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/heavy_tank_1931.dds" 
 	}
 
+	SpriteType = {
+		name = "GFX_gw_bomber_medium"
+		texturefile = "gfx/interface/technologies/gw_tactical_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_gw_fighter_medium"
+		texturefile = "gfx/interface/technologies/gw_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_naval_bomber_1923_medium"
+		texturefile = "gfx/interface/technologies/naval_bomber_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_fighter_1923_medium"
+		texturefile = "gfx/interface/technologies/fighter_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_fighter_1928_medium"
+		texturefile = "gfx/interface/technologies/fighter_1928.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_fighter_1931_medium"
+		texturefile = "gfx/interface/technologies/fighter_1931.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CAS_1931_medium"
+		texturefile = "gfx/interface/technologies/CAS_1931.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bomber_1923_medium"
+		texturefile = "gfx/interface/technologies/bomber_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bomber_1929_medium"
+		texturefile = "gfx/interface/technologies/bomber_1929.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_naval_bomber_1928_medium"
+		texturefile = "gfx/interface/technologies/naval_bomber_1928.dds"
+	}
+
 	### ENG
 
 	SpriteType = {
@@ -77,6 +127,56 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/ENG_heavy_tank_1931.dds" 
 	}
 
+	SpriteType = {
+		name = "GFX_ENG_gw_fighter_medium"
+		texturefile = "gfx/interface/technologies/ENG_gw_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_gw_bomber_medium"
+		texturefile = "gfx/interface/technologies/ENG_gw_tactical_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_fighter_1923_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_naval_bomber_1923_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_bomber_1923_medium"
+		texturefile = "gfx/interface/technologies/ENG_bomber_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_fighter_1928_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter_1928.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_naval_bomber_1928_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber_1928.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_bomber_1929_medium"
+		texturefile = "gfx/interface/technologies/ENG_bomber_1929.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_fighter_1931_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter_1931.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_CAS_1931_medium"
+		texturefile = "gfx/interface/technologies/ENG_CAS_1931.dds"
+	}
+
 	### GER
 
 	SpriteType = {
@@ -107,6 +207,56 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_light_tank_1931_medium"
 		texturefile = "gfx/interface/technologies/GER_light_tank_1931.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_GER_gw_fighter_medium"
+		texturefile = "gfx/interface/technologies/GER_gw_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_gw_bomber_medium"
+		texturefile = "gfx/interface/technologies/GER_gw_tactical_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_fighter_1923_medium"
+		texturefile = "gfx/interface/technologies/GER_fighter_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_naval_bomber_1923_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_bomber_1923_medium"
+		texturefile = "gfx/interface/technologies/GER_bomber_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_fighter_1928_medium"
+		texturefile = "gfx/interface/technologies/GER_fighter_1928.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_naval_bomber_1928_medium"
+		texturefile = "gfx/interface/technologies/GER_naval_bomber_1928.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_bomber_1929_medium"
+		texturefile = "gfx/interface/technologies/GER_bomber_1929.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_fighter_1931_medium"
+		texturefile = "gfx/interface/technologies/GER_fighter_1931.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_CAS_1931_medium"
+		texturefile = "gfx/interface/technologies/GER_CAS_1931.dds"
 	}
 
 	### FRA
@@ -146,6 +296,56 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/FRA_heavy_tank_1931.dds" 
 	}
 
+	SpriteType = {
+		name = "GFX_FRA_gw_fighter_medium"
+		texturefile = "gfx/interface/technologies/FRA_gw_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_gw_bomber_medium"
+		texturefile = "gfx/interface/technologies/FRA_gw_tactical_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_fighter_1923_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_naval_bomber_1923_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_bomber_1923_medium"
+		texturefile = "gfx/interface/technologies/FRA_bomber_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_fighter_1928_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter_1928.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_naval_bomber_1928_medium"
+		texturefile = "gfx/interface/technologies/FRA_naval_bomber_1928.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_bomber_1929_medium"
+		texturefile = "gfx/interface/technologies/FRA_bomber_1929.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_fighter_1931_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter_1931.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_CAS_1931_medium"
+		texturefile = "gfx/interface/technologies/FRA_CAS_1931.dds"
+	}
+
 	### ITA
 
 	SpriteType = {
@@ -171,5 +371,193 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ITA_gwheavytank_medium"
 		texturefile = "gfx/interface/technologies/ITA_gwheavytank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_gw_fighter_medium"
+		texturefile = "gfx/interface/technologies/ITA_gw_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_gw_bomber_medium"
+		texturefile = "gfx/interface/technologies/ITA_gw_tactical_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_bomber_1929_medium"
+		texturefile = "gfx/interface/technologies/ITA_tactical_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/ITA_bomber_1931.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_fighter_1923_medium"
+		texturefile = "gfx/interface/technologies/ITA_fighter_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_naval_bomber_1923_medium"
+		texturefile = "gfx/interface/technologies/ITA_naval_bomber_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_fighter_1928_medium"
+		texturefile = "gfx/interface/technologies/ITA_fighter_1928.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_fighter_1931_medium"
+		texturefile = "gfx/interface/technologies/ITA_fighter_1931.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_CAS_1931_medium"
+		texturefile = "gfx/interface/technologies/ITA_CAS_1931.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_bomber_1923_medium"
+		texturefile = "gfx/interface/technologies/ITA_bomber_1923.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_naval_bomber_1928_medium"
+		texturefile = "gfx/interface/technologies/ITA_naval_bomber_1928.dds"
+	}
+
+	### USA
+
+	SpriteType = {
+		name = "GFX_USA_gwtank_medium"
+		texturefile = "gfx/interface/technologies/USA_gwtank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_gwheavytank_medium"
+		texturefile = "gfx/interface/technologies/USA_gwheavytank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_USA_light_tank_1928_medium"
+		texturefile = "gfx/interface/technologies/USA_light_tank_1928.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_USA_gw_fighter_medium"
+		texturefile = "gfx/interface/technologies/USA_gw_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_gw_bomber_medium"
+		texturefile = "gfx/interface/technologies/USA_gw_tactical_bomber.dds"
+	}
+
+	### RUS
+
+	SpriteType = {
+		name = "GFX_RUS_gwtank_medium"
+		texturefile = "gfx/interface/technologies/RUS_gwtank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RUS_gwmediumtank_medium"
+		texturefile = "gfx/interface/technologies/RUS_gwmediumtank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_RUS_gwheavytank_medium"
+		texturefile = "gfx/interface/technologies/RUS_gwheavytank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_RUS_gw_fighter_medium"
+		texturefile = "gfx/interface/technologies/RUS_gw_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RUS_gw_bomber_medium"
+		texturefile = "gfx/interface/technologies/SOV_gw_tactical_bomber.dds"
+	}
+
+	### SOV
+
+	SpriteType = {
+		name = "GFX_SOV_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SOV_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_light_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_heavy_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_1931.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_heavy_tank.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_light_tank_1922_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_1922.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_light_tank_1928_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_1928.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_light_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_1931.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_gw_fighter_medium"
+		texturefile = "gfx/interface/technologies/SOV_gw_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_gw_bomber_medium"
+		texturefile = "gfx/interface/technologies/SOV_gw_tactical_bomber.dds"
+	}
+
+	### JAP
+
+	SpriteType = {
+		name = "GFX_JAP_light_tank_1922_medium"
+		texturefile = "gfx/interface/technologies/JAP_light_tank_1922.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_light_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/JAP_light_tank_1931.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_medium_tank_1926_medium"
+		texturefile = "gfx/interface/technologies/JAP_medium_tank_1926.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_heavy_tank_1931_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_tank_1931.dds" 
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_gw_fighter_medium"
+		texturefile = "gfx/interface/technologies/JAP_gw_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_gw_bomber_medium"
+		texturefile = "gfx/interface/technologies/JAP_gw_tactical_bomber.dds"
 	}
 }

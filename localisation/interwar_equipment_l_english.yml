@@ -33,8 +33,14 @@
 
  JAP_gw_tank_equipment:0 "Great War Light Tank"
  JAP_gw_tank_equipment_short:0 "Great War Light Tank"
- JAP_light_tank_1922_equipment:0 "FT-Ko"
- JAP_light_tank_1922_equipment_short:0 "FT-Ko"
+ JAP_light_tank_1922_equipment:0 "Type 79 Ko-Gata"
+ JAP_light_tank_1922_equipment_short:0 "Ko-Gata"
+ JAP_medium_tank_1926_equipment:0 "Type 87 Chi-I"
+ JAP_medium_tank_1926_equipment_short:0 "Chi-I"
+ JAP_light_tank_1931_equipment:0 "Otsu-Gata Sensha Type B"
+ JAP_light_tank_1931_equipment_short:0 "Otsu-Gata"
+ JAP_heavy_tank_1931_equipment:0 "Type 91 Heavy Tank"
+ JAP_heavy_tank_1931_equipment_short:0 "Type 91"
  
 ### GER
 
@@ -89,3 +95,44 @@
  FRA_medium_tank_1926_equipment_short:0 "SRB"
  FRA_heavy_tank_1931_equipment:0 "FCM 21"
  FRA_heavy_tank_1931_equipment_short:0 "FCM 21"
+
+ ### USA
+
+ USA_gw_tank_equipment:0 "M1917 Light Tank"
+ USA_gw_tank_equipment_short:0 "M1917"
+ USA_gw_medium_tank_equipment:0 "CLB 75 Tank"
+ USA_gw_medium_tank_equipment_short:0 "CLB 75"
+ USA_gw_heavy_tank_equipment:0 "Mark VIII International Liberty"
+ USA_gw_heavy_tank_equipment_short:0 "International Liberty"
+ USA_light_tank_1928_equipment:0 "T1 Light Tank"
+ USA_light_tank_1928_equipment_short:0 "T1 Light"
+ USA_medium_tank_1926_equipment:0 "T2 Medium Tank"
+ USA_medium_tank_1926_equipment_short:0 "T2"
+
+ ### RUS
+
+ RUS_gw_tank_equipment:0 "Vezdekhod"
+ RUS_gw_tank_equipment_short:0 "Vezdekhod"
+ RUS_gw_medium_tank_equipment:0 "Tsar Tank"
+ RUS_gw_medium_tank_equipment_short:0 "Tsar Tank"
+ RUS_gw_heavy_tank_equipment:0 "Mendeleev Rybinsk Tank"
+ RUS_gw_heavy_tank_equipment_short:0 "Mendeleev"
+
+ ### SOV
+
+ SOV_gw_tank_equipment:0 "Great War Light Tank"
+ SOV_gw_tank_equipment_short:0 "Great War Light Tank"
+ SOV_light_tank_1922_equipment:0 "T-18 Russki Renoe"
+ SOV_light_tank_1922_equipment_short:0 "T-18"
+ SOV_light_tank_1928_equipment:0 "T-26"
+ SOV_light_tank_1928_equipment_short:0 "T-26"
+ SOV_heavy_tank_1931_equipment:0 "T-35"
+ SOV_heavy_tank_1931_equipment_short:0 "T-35"
+ SOV_light_tank_1931_equipment:0 "T-27"
+ SOV_light_tank_1931_equipment_short:0 "T-27"
+ SOV_light_tank_equipment_1:0 "BT-5"
+ SOV_light_tank_equipment_1_short:0 "BT-5"
+ SOV_light_tank_equipment_2:0 "T-46"
+ SOV_light_tank_equipment_2_short:0 "T-46"
+ SOV_heavy_tank_equipment_1:0 "T-28/34"
+ SOV_heavy_tank_equipment_1_short:0 "T-28/34"

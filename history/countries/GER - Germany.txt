@@ -16,6 +16,8 @@
 		gwtank = 1
 		gwheavytank = 1
 		gwmediumtank = 1
+		gw_fighter = 1
+		gw_bomber = 1
 	}
 	
 	set_politics = {
