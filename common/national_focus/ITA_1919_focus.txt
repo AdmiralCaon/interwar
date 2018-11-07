@@ -88,8 +88,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_timed_idea = { idea = ITA_collapsed_government days = 180 }
-			add_political_power = -100
 		}
 	}
 	
@@ -151,7 +149,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ITA_the_anti_socialist_coalition }
 		relative_position_id = ITA_the_anti_socialist_coalition
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -168,20 +166,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = {
-				ITA_widespread_strikes
-			}
-			add_timed_idea = { idea = ITA_worker_resistance days = 180 }
 		}
 	}
 	
 	focus = {
 		id = ITA_address_the_food_problem
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = ITA_combat_the_strikes }
+		prerequisite = { focus = ITA_the_anti_socialist_coalition }
 		relative_position_id = ITA_the_anti_socialist_coalition
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 90
@@ -197,20 +191,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = {
-				ITA_lingering_famine
-			}
-			add_timed_idea = { idea = ITA_increased_food_imports days = 180 }
 		}
 	}
 	
 	focus = {
 		id = ITA_turn_a_blind_eye_to_the_blackshirts
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ITA_address_the_food_problem }
-		relative_position_id = ITA_the_anti_socialist_coalition
-		x = 0
-		y = 3
+		prerequisite = { focus = ITA_address_the_food_problem focus = ITA_combat_the_strikes }
+		relative_position_id = ITA_combat_the_strikes 
+		x = 1
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 90
@@ -226,10 +216,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = {
-				ITA_biennio_rosso
-			}
-			add_timed_idea = { idea = ITA_street_violence days = 180 }
 			add_popularity = { ideology = communism popularity = -0.15 }
 		}
 	}
@@ -238,9 +224,9 @@ focus_tree = {
 		id = ITA_the_1921_elections
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = ITA_turn_a_blind_eye_to_the_blackshirts }
-		relative_position_id = ITA_the_anti_socialist_coalition
-		x = 0
-		y = 4
+		relative_position_id = ITA_combat_the_strikes
+		x = 1
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 90
@@ -263,9 +249,9 @@ focus_tree = {
 		id = ITA_found_the_pnf
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = ITA_the_1921_elections }
-		relative_position_id = ITA_the_anti_socialist_coalition
-		x = 0
-		y = 5
+		relative_position_id = ITA_combat_the_strikes
+		x = 1
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 90
@@ -291,9 +277,9 @@ focus_tree = {
 		id = ITA_march_on_rome
 		icon = GFX_focus_generic_italy_first
 		prerequisite = { focus = ITA_found_the_pnf }
-		relative_position_id = ITA_the_anti_socialist_coalition
-		x = 0
-		y = 6
+		relative_position_id = ITA_combat_the_strikes
+		x = 2
+		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 90
@@ -370,10 +356,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = { ideology = communism popularity = -0.20 }
 			add_popularity = { ideology = democratic popularity = -0.20 }
-			remove_ideas = {
-				ITA_government_divide
-			}
-			add_timed_idea = { idea = ITA_confused_bureaucracy days = 180 }
+			
 		}
 	}
 	
@@ -491,7 +474,7 @@ focus_tree = {
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = ITA_support_the_red_army_of_turin }
 		relative_position_id = ITA_the_coalition_fails
-		x = 0
+		x = 2
 		y = 3
 		cost = 10
 		ai_will_do = {

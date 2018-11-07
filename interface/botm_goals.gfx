@@ -1,0 +1,12 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_focus_GER_weimar_germany"
+		texturefile = "gfx/interface/goals/focus_GER_weimar_germany.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_buy_back_papiermark"
+		texturefile = "gfx/interface/goals/focus_GER_buy_back_papiermark.dds"
+	}
+}

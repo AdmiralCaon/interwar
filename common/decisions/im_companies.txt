@@ -1,0 +1,63 @@
+found_company_category = {
+	found_huff_daland_aero_company = {
+
+		icon = generic_industry
+
+		visible = {
+			original_tag = USA
+			date > 1920.1.1
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = USA_huff_daland_aero_company_founded
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = USA_huff_daland_aero_company
+		}
+
+
+		days_remove = 5
+
+		cost = 50
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+			}
+		}
+	}
+	
+	found_curtiss_wright = {
+
+		icon = generic_industry
+
+		visible = {
+			original_tag = USA
+			date > 1929.7.5
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = USA_huff_daland_aero_company_founded
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = USA_huff_daland_aero_company
+		}
+
+
+		days_remove = 5
+
+		cost = 50
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+			}
+		}
+	}
+}

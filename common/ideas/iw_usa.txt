@@ -1,0 +1,134 @@
+ideas = {
+	country = {
+		
+		USA_white_supremacists = {
+					
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			picture = white_supremacists
+			
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = -0.10
+				stability_factor = -0.20
+				democratic_drift = -0.01
+			}
+		}
+	}
+
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		USA_curtiss_wright_corporation = {
+		
+			picture = curtiss_wright
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				custom_trigger_tooltip = { 
+					tooltip = company_has_been_founded
+					has_country_flag = USA_curtiss_wright_corporation_founded
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { curtiss_wright_corporation }
+		}
+		
+		USA_huff_daland_aero_company = {
+			
+			picture = huff_daland
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				custom_trigger_tooltip = { 
+					tooltip = company_has_been_founded
+					has_country_flag = USA_huff_daland_aero_company_founded
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { huff_daland_aero_company }
+		}
+		
+		USA_loening_aeronautical_engineering = {
+			
+			picture = generic_naval_manufacturer_2
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+			custom_trigger_tooltip = { 
+					tooltip = company_is_active
+					date < 1932.1.1
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { loening_aeronautical_engineering }
+		}
+		
+		USA_curtiss = {
+			
+			picture = curtiss
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				date < 1929.7.5
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { curtiss }
+		}
+		
+		
+		USA_wright_aeronautical = {
+		
+			picture = wright
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				custom_trigger_tooltip = { 
+					tooltip = company_has_been_founded
+					has_country_flag = USA_curtiss_wright_corporation_founded
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { wright_aeronautical }
+		}
+	}
+}

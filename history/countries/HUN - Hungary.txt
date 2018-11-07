@@ -2,6 +2,41 @@
 
 1919.6.28 = {
 	oob = "HUN_1919"
+	
+	create_country_leader = {
+		name = "Gyula Károlyi"
+		desc = "POLITICS_GYULA_KAROLYI_DESC"
+		picture = "Portrait_Hungary_Gyula_Karolyi.dds"
+		expire = "1965.1.1"
+		ideology = centrism
+	}
+	
+	declare_war_on = {
+		target = HSR
+		type = civil_war
+	}
+	
+	set_politics = {
+		parties = {
+			democratic = { 
+				popularity = 3
+			}
+			fascism = {
+				popularity = 0
+			}
+			neutrality = {
+				popularity = 97
+			}
+			communism = {
+				popularity = 0
+			}
+		}
+		
+		ruling_party = neutrality
+		last_election = "1935.3.31"
+		election_frequency = 48
+		elections_allowed = yes
+	}
 }
 
 1936.1.1 = {

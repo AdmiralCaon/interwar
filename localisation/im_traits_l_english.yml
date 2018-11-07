@@ -1,3 +1,8 @@
 ﻿l_english:
  marked:0 "Marked"
  marked_desc:0 "This officer has been scarred by past events and might not perform on the same level as before."
+ trench_warfare_expert:0 "Trench Warfare Expert"
+ trench_warfare_expert_desc:0 "This officer has seen his fair share of trench combat and knows how to entrench."
+ relative:0 "Relative"
+ relative_desc:0 "A relative to the current country leader. Climbing the ladder will most likely be smoothened for this officer."
+ popular_chancellor:0 "Popular Chancellor"

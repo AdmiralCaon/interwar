@@ -1,0 +1,10 @@
+﻿l_english:
+ company_has_been_founded:0 "§YDecision§! has been taken to found this company."
+ company_is_active:0 "Company is active."
+ german_fokker:0 "Fokker hasn't moved to §Y[HOL.GetName]§!."
+ german_fokker_allowed_operations:0 "Has been allowed to operate."
+ anthony_fokker_was_arrested:0 "Prevents §YFokker§! from moving to §Y[HOL.GetName]§!."
+ company_nationalisation:0 "§YNationalises§! the company for government usage."
+ kapp_seizes_control_of_government:0 "§YWolfgang Kapp§! seizes control of the government."
+ kapp_returns_control_of_government:0 "§YWolfgang Kapp§! returns control of the government and resigns."
+ hyperinflation_folds_back:0 "§YDecline of the German Mark§! and §YInflation§! will merge."

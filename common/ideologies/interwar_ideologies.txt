@@ -33,6 +33,9 @@ ideologies = {
 		
 			imperialism = {
 			}
+			
+			military_junta = {
+			}
 		}
 	}
 }

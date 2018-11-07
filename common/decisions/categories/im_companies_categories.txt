@@ -1,0 +1,8 @@
+found_company_category = {
+
+	icon = generic_industry
+
+	allowed = {
+		has_dlc = "Waking the Tiger"
+	}
+}

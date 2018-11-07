@@ -25,13 +25,10 @@ set_war_support = 0.7
 	
 	add_ideas = {
 		ITA_victor_emmanuel
-		ITA_lingering_famine
 		ITA_biennio_rosso
 		ITA_economic_disaster
 		ITA_ethnic_tensions
 		ITA_albanian_opposition
-		ITA_widespread_strikes
-		ITA_government_divide
 		ITA_demobilising_army
 	}
 	
@@ -51,9 +48,10 @@ set_war_support = 0.7
 		}
 		ruling_party = democratic
 		last_election = "1913.10.26"
-		election_frequency = 60
+		election_frequency = 72
 		elections_allowed = yes
 	}
+	
 	set_party_name = { ideology = communism long_name = ITA_socialist_party_long name = ITA_socialist_party }
 	set_party_name = { ideology = democratic long_name = ITA_radical_party name = ITA_radical_party }
 	set_party_name = { ideology = fascism long_name = ITA_italian_fasci_of_combat_long name = ITA_italian_fasci_of_combat }
@@ -128,7 +126,7 @@ set_war_support = 0.7
 	create_corps_commander = {
 		name = "Emanuele Filiberto"
 		picture = "Portrait_Italy_Emanuel_Filiberto.dds"
-		traits = {  }
+		traits = { relative }
 		skill = 3
 		attack_skill = 2
 		defense_skill = 3

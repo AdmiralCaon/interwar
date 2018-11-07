@@ -1,1 +1,2 @@
 RUS	= "countries/Russia.txt"
+HSR = "countries/Red Hungary.txt"

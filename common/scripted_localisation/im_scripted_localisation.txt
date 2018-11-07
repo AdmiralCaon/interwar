@@ -1,0 +1,51 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+defined_text = { # Country
+	name = GetHuffDalandName
+	text = {
+		trigger = {
+			original_tag = USA
+			date > 1920.8.20
+		}
+		localization_key = USA_HUFF_DALAND_AERO_CORP
+	}
+	text = {
+		trigger = {
+			original_tag = USA
+			date > 1925.3.11
+		}
+		localization_key = USA_HUFF_DALAND_AERO_COMPANY
+	}
+	text = {
+		trigger = {
+			original_tag = USA
+			date > 1927.4.29
+		}
+		localization_key = USA_KEYSTONE_AIRCRAFT_CORPORATION
+	}
+	text = {
+		localization_key = USA_OGDENSBURG_AEROWAY_CORP
+	}
+}
+
+defined_text = { # Country
+	name = GetLoeningName
+	text = {
+		trigger = {
+			original_tag = USA
+			date > 1929.4.15
+		}
+		localization_key = USA_GROVER_LOENING_AIRCRAFT_COMPANY
+	}
+	text = {
+		localization_key = USA_LOENING_AERONAUTICAL_ENGINEERING
+	}
+}

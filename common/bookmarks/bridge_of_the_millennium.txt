@@ -19,6 +19,7 @@ bookmarks = {
 			history = "USA_BRIDGE_OF_THE_MILLENNIUM_DESC"
 			ideology = democratic
 			ideas = {
+				USA_white_supremacists
 			}
 			focuses = {
 			}
@@ -35,16 +36,21 @@ bookmarks = {
 			history = "GER_BRIDGE_OF_THE_MILLENNIUM_DESC"
 			ideology = democratic
 			ideas = {
-				
+				GER_hyper_inflation
+				GER_treaty_of_versailles
+				GER_freikorps
 			}
 			focuses = {
+				GER_dolchstosslegende
 			}
 		}
 		"ITA"={
 			history = "ITA_BRIDGE_OF_THE_MILLENNIUM_DESC"
 			ideology = democratic
 			ideas = {
-				
+				ITA_biennio_rosso
+				ITA_economic_disaster
+				ITA_demobilising_army
 			}	
 			focuses = {
 			}		
@@ -77,7 +83,6 @@ bookmarks = {
 				
 			}
 			focuses = {
-				industrial_effort
 			}
 		}
 		

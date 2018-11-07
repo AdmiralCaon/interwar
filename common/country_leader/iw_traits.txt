@@ -11,12 +11,20 @@ leader_traits = {
 	
 	the_burgfrieden_president = {
 		random = no
-		fascism_acceptance = -70
-		communism_acceptance = -70
-		neutrality_acceptance = -70
+		fascism_acceptance = 70
+		communism_acceptance = 70
+		neutrality_acceptance = 70
 		
 		ai_will_do = {
 			factor = 1
 		}
+	}
+	
+	popular_chancellor = {
+		random = no
+		
+		political_advisor_cost_factor = -0.10
+		trade_laws_cost_factor = -0.10
+		economy_cost_factor = -0.10
 	}
 }

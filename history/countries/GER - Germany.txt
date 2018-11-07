@@ -6,6 +6,13 @@
 
 	add_ideas = {
 		GER_friedrich_ebert
+		GER_hyper_inflation
+		GER_freikorps
+		GER_national_food_shortage
+		GER_treaty_of_versailles
+		GER_decline_of_the_mark_1
+		GER_dolchstosslegende_idea
+		disarmed_nation
 	}
 
 	oob = "GER_1919"
@@ -52,6 +59,36 @@
 		picture = "Portrait_Germany_Gustav_Bauer.dds"
 		expire = "1965.1.1"
 		ideology = socialism
+		traits = {
+		}
+	}
+	
+	create_country_leader = {
+		name = "Anton Drexler"
+		desc = "POLITICS_ANTON_DREXLER_DESC"
+		picture = "Portrait_Germany_Anton_Drexler.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+		}
+	}
+	
+	create_country_leader = {
+		name = "Hugo Haase"
+		desc = "POLITICS_HUGO_HAASE_DESC"
+		picture = "Portrait_Germany_Hugo_Haase.dds"
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {
+		}
+	}
+	
+	create_country_leader = {
+		name = "Oskar Hergt"
+		desc = "POLITICS_OSKAR_HERGT_DESC"
+		picture = "Portrait_Germany_Oskar_Hergt.dds"
+		expire = "1965.1.1"
+		ideology = centrism
 		traits = {
 		}
 	}

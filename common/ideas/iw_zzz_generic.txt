@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		
+		company_nationalisation_idea = {
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+	}
+}

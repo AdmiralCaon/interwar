@@ -19,4 +19,34 @@ spriteTypes = {
 		name = "GFX_idea_benetti"
 		texturefile = "gfx/interface/ideas/idea_benetti.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_curtiss_wright"
+		texturefile = "gfx/interface/ideas/idea_curtiss_wright.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_curtiss"
+		texturefile = "gfx/interface/ideas/idea_curtiss.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_huff_daland"
+		texturefile = "gfx/interface/ideas/idea_huff_daland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_wright"
+		texturefile = "gfx/interface/ideas/idea_wright.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_white_supremacists"
+		texturefile = "gfx/interface/ideas/idea_white_supremacists.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fokker"
+		texturefile = "gfx/interface/ideas/idea_fokker.dds"
+	}
 }

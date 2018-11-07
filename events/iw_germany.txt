@@ -1,0 +1,92 @@
+﻿###########################
+# Interwar Germany Events
+###########################
+
+add_namespace = iw_germany
+
+# Kapp Putsch
+country_event = {
+	id = iw_germany.1
+	title = iw_germany.1.t
+	desc = iw_germany.1.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		has_completed_focus = GER_factory_councils_act
+	}
+	
+	option = {
+		name = iw_germany.1.a
+		
+		custom_effect_tooltip = kapp_seizes_control_of_government
+		set_country_flag = kapp_putch_happened
+		hidden_effect = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Wolfgang Kapp"
+				desc = "POLITICS_WOLFGANG_KAPP_DESC"
+				picture = "Portrait_Germany_Wolfgang_Kapp.dds"
+				expire = "1965.1.1"
+				ideology = centrism
+				traits = {
+				}
+			}
+			remove_ideas = {
+				GER_friedrich_ebert
+			}	
+		set_party_name = { ideology = neutrality long_name = GER_reichswehr name = GER_reichswehr }
+		country_event = { id = iw_germany.2 days = 2 }
+		news_event = { id = iw_news.1 hours = 12 }
+		set_cosmetic_tag = GER_kapp_germany
+		}
+	}
+}
+
+
+# Rathenau Assassination
+country_event = {
+	id = iw_germany.2
+	title = iw_germany.2.t
+	desc = iw_germany.2.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		has_completed_focus = GER_rathenau_agreement
+	}
+	
+	option = {
+		name = iw_germany.2.a
+		
+		set_country_flag = GER_matthias_erzberger_assassinated
+	}
+}
+
+
+# Bavaria uprising
+country_event = {
+	id = iw_germany.3
+	title = iw_germany.3.t
+	desc = iw_germany.3.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date > 1921.8.31
+		has_country_flag = matthias_erzberger_assassinated
+	}
+	
+	option = {
+		name = iw_germany.3.a
+		
+		set_country_flag = rebellious_bavarian_government
+		add_ideas = { GER_bavarian_unrest }
+	}
+}

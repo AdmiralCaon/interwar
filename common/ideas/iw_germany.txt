@@ -15,5 +15,526 @@ ideas = {
 				the_burgfrieden_president			
 			}
 		}
+		
+		GER_hyper_inflation = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = chi_hyper_inflation3
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+		
+		GER_hyper_inflation_1 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = chi_hyper_inflation5
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.37
+				industrial_capacity_factory = -0.25
+			}
+		}
+		
+		GER_hyper_inflation_2 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = chi_hyper_inflation5
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.38
+				industrial_capacity_factory = -0.25
+			}
+		}
+		
+		GER_hyper_inflation_3 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = chi_hyper_inflation5
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+				industrial_capacity_factory = -0.25
+			}
+		}
+		
+		GER_hyper_inflation_4 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = chi_hyper_inflation5
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+				industrial_capacity_factory = -0.25
+			}
+		}
+		
+		GER_freikorps = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = prc_low_popular_support3
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.1
+				neutrality_drift = 0.2
+				communism_acceptance = -70
+				democratic_acceptance = -70
+				stability_factor = -0.20
+			}
+		}
+		
+		GER_national_food_shortage = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = great_depression
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				stability_factor = -0.10
+			}
+		}
+		
+		GER_decreased_food_shortage = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = great_depression
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.16
+				stability_factor = -0.05
+			}
+		}
+		
+		GER_new_constitution = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				democratic_acceptance = 50
+				democratic_drift = 0.03
+			}
+		}
+		
+		GER_tainted_constitution = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_morale_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		GER_treaty_of_versailles = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.50
+				conscription = -0.004
+			}
+		}
+		
+		GER_decline_of_the_mark_1 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		
+		GER_decline_of_the_mark_2 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		GER_decline_of_the_mark_3 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.08
+			}
+		}
+		
+		GER_decline_of_the_mark_4 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		GER_decline_of_the_mark_5 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.12
+			}
+		}
+		
+		GER_decline_of_the_mark_6 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		GER_decline_of_the_mark_papiermark = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.08
+			}
+		}
+		
+		GER_last_money_reserves = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		GER_reich_settlement_law_idea = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_agrarian_reform
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		GER_factory_councils = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
+		GER_winter_supplement = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		
+		GER_dolchstosslegende_idea = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_purge
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		
+		GER_dolchstosslegende_idea_anti_zentrum = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_purge
+			
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.01
+				fascism_drift = 0.01
+				democratic_drift = -0.01
+				stability_factor = -0.05
+			}
+		}
+		
+		GER_unemployment_benefits = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.08
+			}
+		}
+		
+		GER_improved_unemployment_benefits = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		
+		GER_voelkischer_beobachter = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = HUN_treaty_of_triannon
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.05
+				fascism_acceptance = 50
+			}
+		}
+		
+		GER_bavarian_unrest = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_disjointed_government
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		
+		GER_encouraged_ruhr_resistance = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = -0.10
+			}
+		}
+		
+		GER_cuno_strikes = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = FRA_factory_strike
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.25
+				production_factory_efficiency_gain_factor = -0.10
+				stability_factor = -0.10
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		GER_gothaer_waggonfabrik = {
+		
+			picture = generic_air_manufacturer_2
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { gothaer_waggonfabrik }
+		}
+		
+		GER_fokker = {
+		
+			picture = fokker
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				NOT = {
+					custom_trigger_tooltip = { 
+						tooltip = german_fokker
+						has_country_flag = GER_fokker_didnt_move
+					}
+				}
+				custom_trigger_tooltip = { 
+					tooltip = german_fokker_allowed_operations
+					has_country_flag = GER_allowed_fokker_to_operate
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { fokker }
+		}
 	}
 }

@@ -3,6 +3,10 @@
 1919.6.28 = {
 	oob = "USA_1919"
 	
+	add_ideas = {
+		USA_white_supremacists
+	}
+	
 	set_technology = {
 		infantry_weapons = 1
 		gwtank = 1
@@ -23,6 +27,42 @@
 			
 		}
 	}
+	
+	create_country_leader = {
+		name = "Arthur E. Reimer"
+		desc = "POLITICS_ARTHUR_E_REIMER_DESC"
+		picture = "Portrait_USA_Arthur_E_Reimer.dds"
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {
+			
+		}
+	}
+	
+	set_politics = {
+
+		parties = {
+			democratic = { 
+				popularity = 100
+			}
+
+			fascism = {
+				popularity = 0
+			}
+			
+			communism = {
+				popularity = 0
+				#banned = no #default is no
+			}
+		}
+		
+		ruling_party = democratic
+		last_election = "1916.11.7"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	
+	set_party_name = { ideology = communism long_name = USA_socialist_labor_party_of_america_long name = USA_socialist_labor_party_of_america }
 }
 
 1936.1.1 = {

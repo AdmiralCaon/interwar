@@ -1,0 +1,28 @@
+ideas = {
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		ENG_handley_page = {
+		
+			picture = handley_page
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			available = {
+				custom_trigger_tooltip = { 
+					tooltip = company_has_been_founded
+					has_country_flag = ENG_handley_page_founded
+				}
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { handley_page }
+		}
+	}
+}

@@ -475,6 +475,10 @@ RUS = {
 	color = rgb { 67 127 63 }
 	color_ui = rgb { 87 165 82 }
 }
+HSR = {
+	color = rgb { 125  13  24 }
+	color_ui = rgb { 125  13  24 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
