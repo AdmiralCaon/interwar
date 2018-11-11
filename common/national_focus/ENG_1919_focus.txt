@@ -1,0 +1,67 @@
+focus_tree = {
+	id = ENG_1919_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 11
+			tag = ENG
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+	
+	focus = {
+		id = ENG_we_will_remember_them
+		icon = GFX_focus_ENG_commonwealth
+		x = 9
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = ENG_rebuild_trust
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = ENG_we_will_remember_them }
+		relative_position_id = ENG_we_will_remember_them
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+}

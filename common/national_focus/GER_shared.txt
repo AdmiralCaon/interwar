@@ -1,0 +1,391 @@
+shared_focus = {
+	id = GER_restoration_of_the_german_economy
+	icon = GFX_focus_generic_industry_1
+	x = 12
+	y = 0
+	cost = 10
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+	}
+		
+	bypass = {
+	}
+
+	completion_reward = {
+		add_timed_idea = { idea = GER_last_money_reserves  days = 180 }
+	}
+}
+	
+shared_focus = {
+	id = GER_import_more_food
+	icon = GFX_goal_generic_positive_trade_relations
+	prerequisite = { focus = GER_restoration_of_the_german_economy }
+	relative_position_id = GER_restoration_of_the_german_economy
+	x = 0
+	y = 1
+	cost = 10
+	ai_will_do = {
+	factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+	}
+	
+	bypass = {
+	}
+
+	completion_reward = {
+		swap_ideas = {
+			add_idea = GER_decreased_food_shortage
+			remove_idea = GER_national_food_shortage
+		}
+		swap_ideas = {
+			add_idea = GER_decline_of_the_mark_2
+			remove_idea = GER_decline_of_the_mark_1
+		}
+	}
+}
+	
+shared_focus = {
+	id = GER_increased_unemployment_benefits
+	icon = GFX_focus_generic_the_giant_wakes
+	prerequisite = { focus = GER_import_more_food }
+	relative_position_id = GER_restoration_of_the_german_economy
+	x = 0
+	y = 2
+	cost = 10
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+	}
+	
+	bypass = {
+		date > 1920.3.20
+	}
+
+	completion_reward = {
+		add_ideas = { GER_unemployment_benefits }
+		swap_ideas = {
+			add_idea = GER_decline_of_the_mark_3
+			remove_idea = GER_decline_of_the_mark_2
+		}
+	}
+}
+	
+shared_focus = {
+	id = GER_provide_winter_supplement
+	icon = GFX_focus_generic_concessions
+	prerequisite = { focus = GER_increased_unemployment_benefits }
+	relative_position_id = GER_restoration_of_the_german_economy
+	x = 0
+	y = 3
+	cost = 10
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+	}
+	
+	bypass = {
+		date > 1920.3.20
+	}
+
+	completion_reward = {
+		swap_ideas = {
+			add_idea = GER_decline_of_the_mark_4
+			remove_idea = GER_decline_of_the_mark_3
+		}
+		add_timed_idea = { idea = GER_winter_supplement days = 90 }
+	}
+}
+	
+shared_focus = {
+	id = GER_renewed_unemployment_benefits
+	icon = GFX_focus_generic_the_giant_wakes
+	prerequisite = { focus = GER_provide_winter_supplement }
+	relative_position_id = GER_restoration_of_the_german_economy
+	x = 0
+	y = 4
+	cost = 10
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+		has_country_leader = { name = "Hermann Müller" }
+	}
+	
+	bypass = {
+	}
+
+	completion_reward = {
+		swap_ideas = {
+			add_idea = GER_improved_unemployment_benefits
+			remove_idea = GER_unemployment_benefits
+		}
+		swap_ideas = {
+			add_idea = GER_decline_of_the_mark_5
+			remove_idea = GER_decline_of_the_mark_4
+		}
+	}
+}
+	
+shared_focus = {
+	id = GER_encourage_ruhr_resistance
+	icon = GFX_goal_generic_more_territorial_claims
+	prerequisite = { focus = GER_renewed_unemployment_benefits }
+	relative_position_id = GER_renewed_unemployment_benefits
+	x = 1
+	y = 1
+	cost = 10
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+		has_country_leader = { name = "Wilhelm Cuno" }
+	}
+	
+	bypass = {
+	}
+
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = GER_renewed_unemployment_benefits
+				}
+			}
+			swap_ideas = {
+				add_idea = GER_decline_of_the_mark_5
+				remove_idea = GER_decline_of_the_mark_4
+			}
+			else = {
+				swap_ideas = {
+					add_idea = GER_decline_of_the_mark_6
+					remove_idea = GER_decline_of_the_mark_5
+				}
+			}
+		}
+		add_ideas = { GER_encouraged_ruhr_resistance }
+	}
+}
+	
+shared_focus = {
+	id = GER_buy_back_papiermark
+	icon = GFX_focus_GER_buy_back_papiermark
+	prerequisite = { focus = GER_encourage_ruhr_resistance }
+	relative_position_id = GER_encourage_ruhr_resistance
+	x = 1
+	y = 1
+	cost = 10
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {	
+	}
+		
+	bypass = {
+	}
+	
+	completion_reward = {
+		swap_ideas = {
+			add_idea = GER_decline_of_the_mark_papiermark
+			remove_idea = GER_decline_of_the_mark_5
+		}
+		if = {
+			limit = {
+				has_idea = GER_decline_of_the_mark_4
+			}
+			swap_ideas = {
+				add_idea = GER_decline_of_the_mark_papiermark
+				remove_idea = GER_decline_of_the_mark_4
+			}
+		}
+		if = {
+			limit = {
+				has_idea = GER_decline_of_the_mark_3
+			}
+			swap_ideas = {
+				add_idea = GER_decline_of_the_mark_papiermark
+				remove_idea = GER_decline_of_the_mark_3
+			}
+		}
+	}
+}
+	
+	
+shared_focus = {
+	id = GER_call_off_ruhr_resistance
+	icon = GFX_focus_generic_peace
+	prerequisite = { focus = GER_buy_back_papiermark }
+	relative_position_id = GER_buy_back_papiermark
+	x = 0
+	y = 1
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+		has_country_leader = { name = "Gustav Stresemann" }
+	}
+		
+	bypass = {
+	}
+		
+	completion_reward = {
+		remove_ideas = { GER_encouraged_ruhr_resistance }
+		add_popularity = { ideology = fascism popularity = -0.1 }
+	}
+}
+	
+shared_focus = {
+	id = GER_the_rentenmark
+	icon = GFX_focus_generic_self_management
+	prerequisite = { focus = GER_call_off_ruhr_resistance }
+	relative_position_id = GER_buy_back_papiermark
+	x = 0
+	y = 2
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+		has_country_leader = { name = "Gustav Stresemann" }
+	}
+		
+	bypass = {
+	}
+
+	completion_reward = {
+		custom_effect_tooltip = hyperinflation_folds_back
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = GER_renewed_unemployment_benefits
+					}
+				}
+				swap_ideas = {
+					add_idea = GER_hyper_inflation_1
+					remove_idea = GER_hyper_inflation
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = GER_encourage_ruhr_resistance
+					}
+				}
+				swap_ideas = {
+					add_idea = GER_hyper_inflation_2
+					remove_idea = GER_hyper_inflation
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							has_completed_focus = GER_renewed_unemployment_benefits
+							has_completed_focus = GER_encourage_ruhr_resistance
+						}
+					}
+				}
+				swap_ideas = {
+					add_idea = GER_hyper_inflation_3
+					remove_idea = GER_hyper_inflation
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						has_completed_focus = GER_renewed_unemployment_benefits
+						has_completed_focus = GER_encourage_ruhr_resistance
+					}
+				}
+				swap_ideas = {
+					add_idea = GER_hyper_inflation_4
+					remove_idea = GER_hyper_inflation
+				}
+			}
+		}
+	}
+}
+	
+shared_focus = {
+	id = GER_economic_treaty_with_us
+	icon = GFX_focus_chi_mission_to_the_us
+	prerequisite = { focus = GER_the_rentenmark }
+	relative_position_id = GER_buy_back_papiermark
+	x = 0
+	y = 3
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+		has_country_leader = { name = "Wilhelm Marx" }
+	}
+		
+	bypass = {
+	}
+
+	completion_reward = {
+		# national spirit awarded to both countries same way the Yug economic thing with the USSR works
+	}
+}
+	
+shared_focus = {
+	id = GER_the_reichsmark
+	icon = GFX_focus_generic_self_management
+	prerequisite = {  }
+	relative_position_id = GER_buy_back_papiermark
+	x = 0
+	y = 3
+	cost = 5
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+		has_country_leader = { name = "Wilhelm Marx" }
+	}
+		
+	bypass = {
+	}
+
+	completion_reward = {
+	}
+}

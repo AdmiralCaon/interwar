@@ -16,7 +16,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_consolidate_weimar_government
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_GER_weimar_germany
 		x = 9
 		y = 0
 		cost = 10
@@ -166,7 +166,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_a_new_chancellor
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_focus_GER_reichstag
 		prerequisite = { focus = GER_kapp_resigns }
 		relative_position_id = GER_kapp_resigns
 		x = 0
@@ -198,31 +198,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_the_nsdap
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = GER_align_with_the_soviets focus = GER_align_with_the_west }
-		relative_position_id = GER_kapp_resigns
-		x = 0
-		y = 3
-		cost = 2
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-			set_party_name = { ideology = fascism long_name = GER_fascism_party_long name = GER_fascism_party }
-		}
-	}
-	
-	focus = {
 		id = GER_align_with_the_west
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GER_a_new_chancellor }
@@ -244,7 +219,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#Relations bonus with the UK and France
+			GER = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = GER_aligned_with_us
+				}
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = ENG
+					modifier = GER_aligned_with_us
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = GER_aligned_with_us
+				}
+			}
+			ENG = {
+				add_opinion_modifier = { 
+					target = GER
+					modifier = GER_aligned_with_us
+				}
+			}
 		}
 	}
 	
@@ -270,17 +268,53 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#Relations bonus with Soviet Union
+			GER = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = GER_aligned_with_us
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = GER_aligned_with_us
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_the_nsdap
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = GER_align_with_the_soviets focus = GER_align_with_the_west }
+		relative_position_id = GER_align_with_the_west
+		x = 3
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			set_party_name = { ideology = fascism long_name = GER_fascism_party_long name = GER_fascism_party }
 		}
 	}
 	
 	focus = {
 		id = GER_replace_the_spd
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_the_nsdap }
-		relative_position_id = GER_kapp_resigns
-		x = 0
-		y = 4
+		prerequisite = { focus = GER_align_with_the_soviets focus = GER_align_with_the_west }
+		relative_position_id = GER_align_with_the_west
+		x = 1
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 90
@@ -310,8 +344,8 @@ focus_tree = {
 	
 	focus = {
 		id = GER_dolchstosslegende
-		icon = GFX_focus_GER_weimar_germany
-		prerequisite = { focus = GER_replace_the_spd }
+		icon = GFX_focus_GER_stab_in_the_back_myth
+		prerequisite = { focus = GER_replace_the_spd focus = GER_the_nsdap }
 		relative_position_id = GER_replace_the_spd
 		x = 0
 		y = 1
@@ -355,13 +389,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
+		
 		}
 		
 		bypass = {
 		}
 
 		completion_reward = {
-			# event to France and Britain regarding decreased war reparations
+			FRA = {
+				country_event = { id = iw_germany.4 days = 1 }
+			}
 		}
 	}
 	
@@ -386,7 +423,29 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# modify treaty of Versailles to the correct amount
+			custom_effect_tooltip = treaty_of_versailles_disarmament_law
+			hidden_effect = {
+				add_manpower = -100000
+			}
+			if = {
+				limit = {
+					has_idea = GER_treaty_of_versailles_concessions
+					}
+				hidden_effect = {
+					swap_ideas = {
+						add_idea = GER_treaty_of_versailles_national_disarmament_law_concessions
+						remove_idea = GER_treaty_of_versailles_concessions
+					}
+				}
+				else = {
+					hidden_effect = {
+						swap_ideas = {
+							add_idea = GER_treaty_of_versailles_national_disarmament_law
+							remove_idea = GER_treaty_of_versailles
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -445,7 +504,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#modify war reparations
+			FRA = {
+				country_event = { id = iw_germany.9 days = 1 }
+			}
 		}
 	}
 	
@@ -470,7 +531,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#modify war reparations
+			add_ideas = {
+				GER_erfullungspolitik_idea
+			}
 		}
 	}
 	
@@ -531,6 +594,9 @@ focus_tree = {
 				}
 			}
 			set_party_name = { ideology = democratic long_name = independent_politician name = independent_politician }
+			remove_ideas = {
+				GER_erfullungspolitik_idea
+			}
 		}
 	}
 	
@@ -555,7 +621,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# event to France that could clear consumer goods in Treaty of Versailles
+			FRA = {
+				country_event = { id = iw_germany.12 days = 1 }
+			}
 		}
 	}
 	
@@ -582,7 +650,10 @@ focus_tree = {
 
 		completion_reward = {
 			# remove large percentage of war reps due to France and Belgium occupying Ruhr
-			# add to hyperinflation
+			swap_ideas = {
+				add_idea = GER_hyper_inflation_1
+				remove_idea =  GER_hyper_inflation
+			}
 		}
 	}
 	
@@ -646,6 +717,9 @@ focus_tree = {
 				}
 			}
 			set_party_name = { ideology = democratic long_name = GER_german_peoples_party_long name = GER_german_peoples_party }
+			hidden_effect = {
+				remove_ideas = { GER_cuno_strikes }
+			}
 		}
 	}
 	
@@ -670,7 +744,33 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# higher consumer goods on Versailles
+			# lower consumer goods on Versailles
+		}
+	}
+	
+	focus = {
+		id = GER_beerhall_putsch
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = GER_resignation_of_cuno }
+		prerequisite = { focus = GER_honour_the_german_freebooter }
+		relative_position_id = GER_resignation_of_cuno
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			# event
 		}
 	}
 	
@@ -712,6 +812,7 @@ focus_tree = {
 		id = GER_print_voelkischer_beobachter
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GER_national_disarmament_law }
+		prerequisite = { focus = GER_the_nsdap }
 		relative_position_id = GER_replace_the_spd
 		x = 2
 		y = 4
@@ -793,6 +894,144 @@ focus_tree = {
 			add_popularity = { ideology = fascism popularity = 0.15 }
 		}
 	}
+	
+	focus = {
+		id = GER_honour_the_german_freebooter
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = GER_negotiate_payment_moratorium }
+		prerequisite = { focus = GER_disrupt_bayernbund_speech }
+		relative_position_id = GER_negotiate_payment_moratorium
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.10 }
+			FRA = {
+				add_opinion_modifier = { 
+					target = GER
+					modifier = GER_honoured_the_freebooter
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_emminger_reforms
+		icon = GFX_focus_GER_judicial_system
+		prerequisite = { focus = GER_remove_stresemann }
+		relative_position_id = GER_resignation_of_cuno
+		x = 1
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = -0.10 }
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = GER_enabling_act
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = GER_remove_stresemann }
+		relative_position_id = GER_resignation_of_cuno
+		x = -1
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			# gives decision that allows the president to seize full control - establish either fascist or neutral totalitarian state
+		}
+	}
+	
+	focus = {
+		id = GER_beerhall_trials
+		icon = GFX_focus_GER_judicial_system
+		prerequisite = { focus = GER_emminger_reforms }
+		prerequisite = { focus = GER_beerhall_putsch }
+		relative_position_id = GER_beerhall_putsch
+		x = 0
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			# series of events leading to their arrests
+		}
+	}
+	
+	focus = {
+		id = GER_beerhall_conclusion
+		icon = GFX_focus_GER_beerhall_conclusion
+		prerequisite = { focus = GER_beerhall_trials }
+		relative_position_id = GER_beerhall_trials
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_flag = beerhall_trials_complete
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			load_focus_tree = GER_1924_focus
+			add_stability = 0.10
+		}
+	}
+	
+	### KAPP
 
 	focus = {
 		id = GER_the_kapp_government
@@ -820,378 +1059,7 @@ focus_tree = {
 		}
 	}
 	
-	### INTERNAL ISSUES
-	
-	focus = {
-		id = GER_restoration_of_the_german_economy
-		icon = GFX_focus_generic_industry_1
-		x = 12
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-			add_timed_idea = { idea = GER_last_money_reserves  days = 180 }
-		}
-	}
-	
-	focus = {
-		id = GER_import_more_food
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = GER_restoration_of_the_german_economy }
-		relative_position_id = GER_restoration_of_the_german_economy
-		x = 0
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = GER_decreased_food_shortage
-				remove_idea = GER_national_food_shortage
-			}
-			swap_ideas = {
-				add_idea = GER_decline_of_the_mark_2
-				remove_idea = GER_decline_of_the_mark_1
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_increased_unemployment_benefits
-		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = GER_import_more_food }
-		relative_position_id = GER_restoration_of_the_german_economy
-		x = 0
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			
-		}
-		
-		bypass = {
-			date > 1920.3.20
-		}
-
-		completion_reward = {
-			add_ideas = { GER_unemployment_benefits }
-			swap_ideas = {
-				add_idea = GER_decline_of_the_mark_3
-				remove_idea = GER_decline_of_the_mark_2
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_provide_winter_supplement
-		icon = GFX_focus_generic_concessions
-		prerequisite = { focus = GER_increased_unemployment_benefits }
-		relative_position_id = GER_restoration_of_the_german_economy
-		x = 0
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			
-		}
-		
-		bypass = {
-			date > 1920.3.20
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = GER_decline_of_the_mark_4
-				remove_idea = GER_decline_of_the_mark_3
-			}
-			add_timed_idea = { idea = GER_winter_supplement days = 90 }
-		}
-	}
-	
-	focus = {
-		id = GER_renewed_unemployment_benefits
-		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = GER_provide_winter_supplement }
-		relative_position_id = GER_restoration_of_the_german_economy
-		x = 0
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			has_country_leader = { name = "Hermann Müller" }
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = GER_improved_unemployment_benefits
-				remove_idea = GER_unemployment_benefits
-			}
-			swap_ideas = {
-				add_idea = GER_decline_of_the_mark_5
-				remove_idea = GER_decline_of_the_mark_4
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_encourage_ruhr_resistance
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_renewed_unemployment_benefits }
-		relative_position_id = GER_renewed_unemployment_benefits
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			has_country_leader = { name = "Wilhelm Cuno" }
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = GER_renewed_unemployment_benefits
-					}
-				}
-				swap_ideas = {
-					add_idea = GER_decline_of_the_mark_5
-					remove_idea = GER_decline_of_the_mark_4
-				}
-				else = {
-					swap_ideas = {
-						add_idea = GER_decline_of_the_mark_6
-						remove_idea = GER_decline_of_the_mark_5
-					}
-				}
-			}
-			add_ideas = { GER_encouraged_ruhr_resistance }
-		}
-	}
-	
-	focus = {
-		id = GER_buy_back_papiermark
-		icon = GFX_focus_GER_buy_back_papiermark
-		prerequisite = { focus = GER_encourage_ruhr_resistance }
-		relative_position_id = GER_encourage_ruhr_resistance
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				add_idea = GER_decline_of_the_mark_papiermark
-				remove_idea = GER_decline_of_the_mark_5
-			}
-			if = {
-				limit = {
-					has_idea = GER_decline_of_the_mark_4
-				}
-				swap_ideas = {
-					add_idea = GER_decline_of_the_mark_papiermark
-					remove_idea = GER_decline_of_the_mark_4
-				}
-			}
-			if = {
-				limit = {
-					has_idea = GER_decline_of_the_mark_3
-				}
-				swap_ideas = {
-					add_idea = GER_decline_of_the_mark_papiermark
-					remove_idea = GER_decline_of_the_mark_3
-				}
-			}
-		}
-	}
-	
-	
-	focus = {
-		id = GER_call_off_ruhr_resistance
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = GER_buy_back_papiermark }
-		relative_position_id = GER_buy_back_papiermark
-		x = 0
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			has_country_leader = { name = "Gustav Stresemann" }
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-			remove_ideas = { GER_encouraged_ruhr_resistance }
-			add_popularity = { ideology = fascism popularity = -0.1 }
-		}
-	}
-	
-	focus = {
-		id = GER_the_rentenmark
-		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = GER_call_off_ruhr_resistance }
-		relative_position_id = GER_buy_back_papiermark
-		x = 0
-		y = 2
-		cost = 5
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			has_country_leader = { name = "Gustav Stresemann" }
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = hyperinflation_folds_back
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = {
-							has_completed_focus = GER_renewed_unemployment_benefits
-						}
-					}
-					swap_ideas = {
-						add_idea = GER_hyper_inflation_1
-						remove_idea = GER_hyper_inflation
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_completed_focus = GER_encourage_ruhr_resistance
-						}
-					}
-					swap_ideas = {
-						add_idea = GER_hyper_inflation_2
-						remove_idea = GER_hyper_inflation
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							AND = {
-								has_completed_focus = GER_renewed_unemployment_benefits
-								has_completed_focus = GER_encourage_ruhr_resistance
-							}
-						}
-					}
-					swap_ideas = {
-						add_idea = GER_hyper_inflation_3
-						remove_idea = GER_hyper_inflation
-					}
-				}
-				if = {
-					limit = {
-						AND = {
-							has_completed_focus = GER_renewed_unemployment_benefits
-							has_completed_focus = GER_encourage_ruhr_resistance
-						}
-					}
-					swap_ideas = {
-						add_idea = GER_hyper_inflation_4
-						remove_idea = GER_hyper_inflation
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_the_reichsmark
-		icon = GFX_focus_generic_self_management
-		prerequisite = {  }
-		relative_position_id = GER_buy_back_papiermark
-		x = 0
-		y = 3
-		cost = 5
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			has_country_leader = { name = "Wilhelm Marx" }
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-		}
-	}
+	shared_focus = GER_restoration_of_the_german_economy
 	
 	### FOKKER
 	

@@ -42,7 +42,23 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { curtiss_wright_corporation }
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = 0.15 maximum_speed = 0.1
+				}
+				CAS_equipment = {
+					air_ground_attack = 0.1
+				}
+				nav_bomber_equipment = {
+					air_range = 0.1
+				}
+				tac_bomber_equipment = {
+					reliability = 0.05
+				}
+				strat_bomber_equipment = {
+					reliability = 0.05
+				}
+			}
 		}
 		
 		USA_huff_daland_aero_company = {
@@ -54,9 +70,9 @@ ideas = {
 			}
 			
 			available = {
-				custom_trigger_tooltip = { 
-					tooltip = company_has_been_founded
-					has_country_flag = USA_huff_daland_aero_company_founded
+				custom_trigger_tooltip = {
+					tooltip = company_is_active
+					company_is_active = yes
 				}
 			}
 			
@@ -64,7 +80,20 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { huff_daland_aero_company }
+			equipment_bonus = {
+				fighter_equipment = {
+					reliability = 0.1
+				}
+				CAS_equipment = {
+					air_ground_attack = 0.1
+				}
+				tac_bomber_equipment = {
+					air_range = 0.1
+				}
+				strat_bomber_equipment = {
+					reliability = 0.1
+				}
+			}
 		}
 		
 		USA_loening_aeronautical_engineering = {
@@ -76,9 +105,9 @@ ideas = {
 			}
 			
 			available = {
-			custom_trigger_tooltip = { 
+				custom_trigger_tooltip = {
 					tooltip = company_is_active
-					date < 1932.1.1
+					company_is_active = yes
 				}
 			}
 			
@@ -86,7 +115,14 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { loening_aeronautical_engineering }
+			equipment_bonus = {
+				fighter_equipment = {
+					reliability = 0.1
+				}
+				nav_bomber_equipment = {
+					air_range = 0.2 naval_strike_attack = 0.2
+				}
+			}
 		}
 		
 		USA_curtiss = {
@@ -98,14 +134,30 @@ ideas = {
 			}
 			
 			available = {
-				date < 1929.7.5
+				custom_trigger_tooltip = {
+					tooltip = company_is_active
+					company_is_active = yes
+				}
 			}
 			
 			research_bonus = {
 				air_equipment = 0.10
 			}
 			
-			traits = { curtiss }
+			equipment_bonus = {
+				fighter_equipment = {
+					reliability = 0.1
+				}
+				CAS_equipment = {
+					air_ground_attack = 0.05
+				}
+				nav_bomber_equipment = {
+					air_range = 0.05
+				}
+				tac_bomber_equipment = {
+					air_range = 0.05
+				}
+			}
 		}
 		
 		
@@ -118,9 +170,9 @@ ideas = {
 			}
 			
 			available = {
-				custom_trigger_tooltip = { 
-					tooltip = company_has_been_founded
-					has_country_flag = USA_curtiss_wright_corporation_founded
+				custom_trigger_tooltip = {
+					tooltip = company_is_active
+					company_is_active = yes
 				}
 			}
 			
@@ -128,7 +180,14 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { wright_aeronautical }
+			equipment_bonus = {
+				tac_bomber_equipment = {
+					air_range = 0.2
+				}
+				fighter_equipment = {
+					reliability = 0.1
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,19 @@
+focus_tree = {
+	id = GER_1924_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+	
+	shared_focus = GER_restoration_of_the_german_economy
+	
+}

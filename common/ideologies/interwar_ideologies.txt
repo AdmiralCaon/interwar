@@ -36,6 +36,9 @@ ideologies = {
 			
 			military_junta = {
 			}
+
+			mandate = {
+			}
 		}
 	}
 }

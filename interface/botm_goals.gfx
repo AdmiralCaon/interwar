@@ -9,4 +9,59 @@ spriteTypes = {
 		name = "GFX_focus_GER_buy_back_papiermark"
 		texturefile = "gfx/interface/goals/focus_GER_buy_back_papiermark.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_reichstag"
+		texturefile = "gfx/interface/goals/focus_GER_reichstag.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_monetary_focus"
+		texturefile = "gfx/interface/goals/focus_monatery_focus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_commonwealth"
+		texturefile = "gfx/interface/goals/focus_ENG_commonwealth.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_balfour_declaration"
+		texturefile = "gfx/interface/goals/focus_ENG_balfour_declaration.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_peace"
+		texturefile = "gfx/interface/goals/focus_peace.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_stab_in_the_back_myth"
+		texturefile = "gfx/interface/goals/focus_GER_stab_in_the_back_myth.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_fascism"
+		texturefile = "gfx/interface/goals/focus_fascism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_industry_1"
+		texturefile = "gfx/interface/goals/focus_generic_industry_1.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_government"
+		texturefile = "gfx/interface/goals/focus_FRA_government.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_judicial_system"
+		texturefile = "gfx/interface/goals/focus_GER_judicial_system.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_beerhall_conclusion"
+		texturefile = "gfx/interface/goals/focus_GER_beerhall_conclusion.dds"
+	}
 }

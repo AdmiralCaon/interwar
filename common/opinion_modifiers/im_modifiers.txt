@@ -1,0 +1,10 @@
+opinion_modifiers = {
+	
+	GER_aligned_with_us = {
+		value = 40
+	}
+	
+	GER_honoured_the_freebooter = {
+		value = -50
+	}
+}

@@ -127,6 +127,7 @@ set_war_support = 0.7
 		name = "Emanuele Filiberto"
 		picture = "Portrait_Italy_Emanuel_Filiberto.dds"
 		traits = { relative }
+		id = 999
 		skill = 3
 		attack_skill = 2
 		defense_skill = 3

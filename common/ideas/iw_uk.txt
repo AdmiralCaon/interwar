@@ -22,7 +22,20 @@ ideas = {
 				air_equipment = 0.10
 			}
 			
-			traits = { handley_page }
+			equipment_bonus = {
+				nav_bomber_equipment = {
+					reliability = 0.1
+				}
+				tac_bomber_equipment = {
+					air_range = 0.1
+				}
+				strat_bomber_equipment = {
+					air_range = 0.1
+				}
+				cv_fighter_equipment = {
+					air_agility = 0.1
+				}
+			}
 		}
 	}
 }

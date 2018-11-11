@@ -47,7 +47,6 @@ country_event = {
 	}
 }
 
-
 # Rathenau Assassination
 country_event = {
 	id = iw_germany.2
@@ -68,7 +67,6 @@ country_event = {
 	}
 }
 
-
 # Bavaria uprising
 country_event = {
 	id = iw_germany.3
@@ -88,5 +86,252 @@ country_event = {
 		
 		set_country_flag = rebellious_bavarian_government
 		add_ideas = { GER_bavarian_unrest }
+	}
+}
+
+# Seek concessions from the allies
+country_event = {
+	id = iw_germany.4
+	title = iw_germany.4.t
+	desc = iw_germany.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.4.a
+		
+		ai_chance = { factor = 20 }
+		ENG = {
+			country_event = { id = iw_germany.5 days = 1 }
+		}
+	}
+	
+	option = {
+		name = iw_germany.4.b
+		
+		ai_chance = { factor = 80 }
+		GER = {
+			country_event = { id = iw_germany.6 days = 1 }
+		}
+	}
+}
+
+# France agreed to concessions
+country_event = {
+	id = iw_germany.5
+	title = iw_germany.5.t
+	desc = iw_germany.5.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.5.a
+		
+		ai_chance = { factor = 40 }
+		FRA = {
+			country_event = { id = iw_germany.7 days = 1 }
+		}
+		GER = {
+			country_event = { id = iw_germany.8 days = 1 }
+		}
+	}
+	
+	option = {
+		name = iw_germany.5.b
+		
+		ai_chance = { factor = 60 }
+		GER = {
+			country_event = { id = iw_germany.6 days = 1 }
+		}
+	}
+}
+
+# Either of the Allies disagreed
+country_event = {
+	id = iw_germany.6
+	title = iw_germany.6.t
+	desc = iw_germany.6.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.6.a
+	}
+}
+
+# Letting France know that Britain agreed too
+country_event = {
+	id = iw_germany.7
+	title = iw_germany.7.t
+	desc = iw_germany.7.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.7.a
+	}
+}
+
+# Letting Germany know that the Allies agreed
+country_event = {
+	id = iw_germany.8
+	title = iw_germany.8.t
+	desc = iw_germany.8.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.8.a
+		
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions
+			remove_idea = GER_treaty_of_versailles
+		}
+	}
+}
+
+# Rathenau Agreement
+country_event = {
+	id = iw_germany.9
+	title = iw_germany.9.t
+	desc = iw_germany.9.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.9.a
+		
+		ai_chance = { factor = 10 }
+		GER = {
+			country_event = { id = iw_germany.10 days = 1 }
+		}
+	}
+	
+	option = {
+		name = iw_germany.9.b
+		
+		ai_chance = { factor = 90 }
+		GER = {
+			country_event = { id = iw_germany.11 days = 1 }
+		}
+	}
+}
+
+# Rathenau Agreement - France Agreed
+country_event = {
+	id = iw_germany.10
+	title = iw_germany.10.t
+	desc = iw_germany.10.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.10.a
+		
+		if = {
+			limit = {
+				has_idea = GER_treaty_of_versailles_national_disarmament_law_concessions
+				}
+			swap_ideas = {
+				add_idea = GER_treaty_of_versailles_national_disarmament_law_concessions_rathenau
+				remove_idea = GER_treaty_of_versailles_national_disarmament_law_concessions
+			}
+			else = {
+				swap_ideas = {
+					add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+					remove_idea = GER_treaty_of_versailles_national_disarmament_law
+				}
+			}
+		}
+	}
+}
+
+# Rathenau Agreement - France Declined
+country_event = {
+	id = iw_germany.11
+	title = iw_germany.11.t
+	desc = iw_germany.11.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.11.a
+	}
+}
+
+# Payment Moratorium
+country_event = {
+	id = iw_germany.12
+	title = iw_germany.12.t
+	desc = iw_germany.12.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.12.a
+		
+		ai_chance = { factor = 10 }
+		GER = {
+			country_event = { id = iw_germany.13 days = 1 }
+		}
+	}
+	
+	option = {
+		name = iw_germany.12.b
+		
+		ai_chance = { factor = 90 }
+		GER = {
+			country_event = { id = iw_germany.14 days = 1 }
+		}
+	}
+}
+
+# Payment Moratorium - France Agreed
+country_event = {
+	id = iw_germany.13
+	title = iw_germany.13.t
+	desc = iw_germany.13.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.13.a
+		
+		if = {
+			limit = {
+				has_idea = GER_treaty_of_versailles_national_disarmament_law_concessions_rathenau
+				}
+			swap_ideas = {
+				add_idea = GER_treaty_of_versailles_national_disarmament_law_concessions_rathenau_moratorium
+				remove_idea = GER_treaty_of_versailles_national_disarmament_law_concessions_rathenau
+			}
+		}
+		if = {
+			limit = {
+				has_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+			}
+			swap_ideas = {
+				add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium
+				remove_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+			}
+		}
+		if = {
+			limit = {
+				has_idea = GER_treaty_of_versailles_national_disarmament_law_concessions
+			}
+			swap_ideas = {
+				add_idea = GER_treaty_of_versailles_national_disarmament_law_concessions_moratorium
+				remove_idea = GER_treaty_of_versailles_national_disarmament_law_concessions
+			}
+		}
+		if = {
+			limit = {
+				has_idea = GER_treaty_of_versailles_national_disarmament_law
+			}
+			swap_ideas = {
+				add_idea = GER_treaty_of_versailles_national_disarmament_law_moratorium
+				remove_idea = GER_treaty_of_versailles_national_disarmament_law
+			}
+		}
 	}
 }

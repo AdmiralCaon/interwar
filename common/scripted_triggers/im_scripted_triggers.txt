@@ -1,0 +1,18 @@
+company_is_active = {
+	has_country_flag = USA_huff_daland_founded
+	has_country_flag = USA_loening_founded
+	has_country_flag = USA_curtiss_founded
+	has_country_flag = USA_wright_founded
+	NOT = {
+		has_country_flag = huff_daland_disbanded
+	}
+	NOT = {
+		has_country_flag = loening_disbanded
+	}
+	NOT = {
+		has_country_flag = curtiss_disbanded
+	}
+	NOT = {
+		has_country_flag = wright_disbanded
+	}
+}
