@@ -27,4 +27,10 @@ leader_traits = {
 		trade_laws_cost_factor = -0.10
 		economy_cost_factor = -0.10
 	}
+	
+	father_of_victory = {
+		random = no
+		
+		army_morale_factor = 0.05
+	}
 }

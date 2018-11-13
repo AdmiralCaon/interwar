@@ -25,9 +25,7 @@ set_war_support = 0.15
 		picture = "Portrait_France_Georges_Clemenceau.dds"
 		expire = "1965.1.1"
 		ideology = liberalism
-		traits = {
-			
-		}
+		traits = { father_of_victory }
 	}
 	
 	create_country_leader = {

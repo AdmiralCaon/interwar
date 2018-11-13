@@ -64,4 +64,14 @@ spriteTypes = {
 		name = "GFX_focus_GER_beerhall_conclusion"
 		texturefile = "gfx/interface/goals/focus_GER_beerhall_conclusion.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_execute_the_freebooter"
+		texturefile = "gfx/interface/goals/focus_FRA_execute_the_freebooter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_military_decree"
+		texturefile = "gfx/interface/goals/focus_GER_military_decree.dds"
+	}
 }

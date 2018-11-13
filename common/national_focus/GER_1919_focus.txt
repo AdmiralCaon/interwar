@@ -14,6 +14,8 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1100 }
 	
+	shared_focus = GER_military_decree
+	
 	focus = {
 		id = GER_consolidate_weimar_government
 		icon = GFX_focus_GER_weimar_germany
@@ -116,6 +118,7 @@ focus_tree = {
 			add_ideas = {
 				GER_factory_councils
 			}
+			add_popularity = { ideology = communism popularity = 0.05 }
 		}
 	}
 	
@@ -148,8 +151,8 @@ focus_tree = {
 					GER_friedrich_ebert
 				}
 				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
+					ruling_party = democratic
+					elections_allowed = yes
 				}
 				create_country_leader = {
 					name = "Gustav Bauer"
@@ -160,6 +163,7 @@ focus_tree = {
 					traits = {
 					}
 				}
+				set_party_name = { ideology = neutrality long_name = GER_german_national_peoples_party_long name = GER_german_national_peoples_party }
 			}
 		}
 	}
@@ -423,28 +427,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			escalate_treaty_of_versailles = yes
 			custom_effect_tooltip = treaty_of_versailles_disarmament_law
 			hidden_effect = {
 				add_manpower = -100000
-			}
-			if = {
-				limit = {
-					has_idea = GER_treaty_of_versailles_concessions
-					}
-				hidden_effect = {
-					swap_ideas = {
-						add_idea = GER_treaty_of_versailles_national_disarmament_law_concessions
-						remove_idea = GER_treaty_of_versailles_concessions
-					}
-				}
-				else = {
-					hidden_effect = {
-						swap_ideas = {
-							add_idea = GER_treaty_of_versailles_national_disarmament_law
-							remove_idea = GER_treaty_of_versailles
-						}
-					}
-				}
 			}
 		}
 	}
@@ -649,7 +635,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# remove large percentage of war reps due to France and Belgium occupying Ruhr
+			escalate_treaty_of_versailles = yes
 			swap_ideas = {
 				add_idea = GER_hyper_inflation_1
 				remove_idea =  GER_hyper_inflation
@@ -911,6 +897,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
+			has_country_flag = france_killed_the_freebooter
 		}
 		
 		bypass = {
@@ -1076,7 +1063,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = german_fokker
+				NOT = {
+					has_country_flag = fokker_moved
+				}
+			}
 		}
 		
 		bypass = {

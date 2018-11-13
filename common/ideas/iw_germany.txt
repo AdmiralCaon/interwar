@@ -220,28 +220,6 @@ ideas = {
 			}
 		}
 		
-		GER_treaty_of_versailles_concessions = {
-			
-			allowed = {
-				original_tag = "GER"
-			}
-			
-			picture = GER_treaty_of_versailles
-			
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = 0.45
-				conscription = -0.004
-				production_speed_arms_factory_factor = -0.8
-				industrial_capacity_dockyard = -0.5
-				industrial_capacity_factory = -0.5
-				conversion_cost_civ_to_mil_factor = 0.5
-				production_factory_max_efficiency_factor = -0.25
-				production_factory_efficiency_gain_factor = -0.25
-			}
-		}
-		
 		GER_treaty_of_versailles_national_disarmament_law = {
 			
 			allowed = {
@@ -255,116 +233,6 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.50
 				conscription = -0.008
-				production_speed_arms_factory_factor = -0.8
-				industrial_capacity_dockyard = -0.5
-				industrial_capacity_factory = -0.5
-				conversion_cost_civ_to_mil_factor = 0.5
-				production_factory_max_efficiency_factor = -0.25
-				production_factory_efficiency_gain_factor = -0.25
-			}
-		}
-		
-		GER_treaty_of_versailles_national_disarmament_law_moratorium = {
-			
-			allowed = {
-				original_tag = "GER"
-			}
-			
-			picture = GER_treaty_of_versailles
-			
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = 0.50
-				conscription = -0.008
-				production_speed_arms_factory_factor = -0.8
-				industrial_capacity_dockyard = -0.5
-				industrial_capacity_factory = -0.5
-				conversion_cost_civ_to_mil_factor = 0.5
-				production_factory_max_efficiency_factor = -0.25
-				production_factory_efficiency_gain_factor = -0.25
-			}
-		}
-		
-		GER_treaty_of_versailles_national_disarmament_law_concessions = {
-			
-			allowed = {
-				original_tag = "GER"
-			}
-			
-			picture = GER_treaty_of_versailles
-			
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = 0.45
-				conscription = -0.008
-				production_speed_arms_factory_factor = -0.8
-				industrial_capacity_dockyard = -0.5
-				industrial_capacity_factory = -0.5
-				conversion_cost_civ_to_mil_factor = 0.5
-				production_factory_max_efficiency_factor = -0.25
-				production_factory_efficiency_gain_factor = -0.25
-			}
-		}
-		
-		GER_treaty_of_versailles_national_disarmament_law_concessions_moratorium = {
-			
-			allowed = {
-				original_tag = "GER"
-			}
-			
-			picture = GER_treaty_of_versailles
-			
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = 0.40
-				conscription = -0.008
-				production_speed_arms_factory_factor = -0.8
-				industrial_capacity_dockyard = -0.5
-				industrial_capacity_factory = -0.5
-				conversion_cost_civ_to_mil_factor = 0.5
-				production_factory_max_efficiency_factor = -0.25
-				production_factory_efficiency_gain_factor = -0.25
-			}
-		}
-		
-		GER_treaty_of_versailles_national_disarmament_law_concessions_rathenau = {
-			
-			allowed = {
-				original_tag = "GER"
-			}
-			
-			picture = GER_treaty_of_versailles
-			
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = 0.40
-				conscription = -0.007
-				production_speed_arms_factory_factor = -0.8
-				industrial_capacity_dockyard = -0.5
-				industrial_capacity_factory = -0.5
-				conversion_cost_civ_to_mil_factor = 0.5
-				production_factory_max_efficiency_factor = -0.25
-				production_factory_efficiency_gain_factor = -0.25
-			}
-		}
-		
-		GER_treaty_of_versailles_national_disarmament_law_concessions_rathenau_moratorium = {
-			
-			allowed = {
-				original_tag = "GER"
-			}
-			
-			picture = GER_treaty_of_versailles
-			
-			removal_cost = -1
-			
-			modifier = {
-				consumer_goods_factor = 0.35
-				conscription = -0.007
 				production_speed_arms_factory_factor = -0.8
 				industrial_capacity_dockyard = -0.5
 				industrial_capacity_factory = -0.5
@@ -408,6 +276,314 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.40
+				conscription = -0.007
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_national_disarmament_law_moratorium = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.45
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_national_disarmament_law_moratorium_ruhr = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium_ruhr = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_national_disarmament_law_ruhr = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.30
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_national_disarmament_law_rathenau_ruhr = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				conscription = -0.007
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.45
+				conscription = -0.004
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.45
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+				conscription = -0.007
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_ruhr = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				conscription = -0.007
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium_ruhr = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_ruhr = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				conscription = -0.007
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+				conscription = -0.007
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium_ruhr = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
 				conscription = -0.007
 				production_speed_arms_factory_factor = -0.8
 				industrial_capacity_dockyard = -0.5
@@ -533,7 +709,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.3
 			}
 		}
 		

@@ -1,4 +1,29 @@
 shared_focus = {
+	id = GER_military_decree
+	icon = GFX_focus_GER_military_decree
+	x = 5
+	y = 0
+	cost = 10
+	ai_will_do = {
+		factor = 90
+	}
+
+	available_if_capitulated = yes
+
+	available = {
+	}
+		
+	bypass = {
+	}
+
+	completion_reward = {
+		air_experience = 15
+		army_experience = 15
+		navy_experience = 15
+	}
+}
+
+shared_focus = {
 	id = GER_restoration_of_the_german_economy
 	icon = GFX_focus_generic_industry_1
 	x = 12
@@ -162,6 +187,14 @@ shared_focus = {
 
 	available = {
 		has_country_leader = { name = "Wilhelm Cuno" }
+		custom_trigger_tooltip = {
+			tooltip = french_occupied_ruhr
+			FRA = {
+				owns_state = 763
+				owns_state = 42
+				owns_state = 51
+			}
+		}
 	}
 	
 	bypass = {
@@ -186,6 +219,9 @@ shared_focus = {
 			}
 		}
 		add_ideas = { GER_encouraged_ruhr_resistance }
+		FRA = {
+			add_ideas = { FRA_rebellion_in_the_ruhr }
+		}
 	}
 }
 	

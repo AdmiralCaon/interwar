@@ -136,3 +136,5 @@
  SOV_light_tank_equipment_2_short:0 "T-46"
  SOV_heavy_tank_equipment_1:0 "T-28/34"
  SOV_heavy_tank_equipment_1_short:0 "T-28/34"
+ SOV_infantry_equipment_0:0 "M-N M1891"
+ SOV_infantry_equipment_0_short:0 "M-N 1891"

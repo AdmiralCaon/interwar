@@ -58,142 +58,107 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.05
 			add_political_power = 50
 		}
 	}
 	
-	### INDUSTRY
-	
 	focus = {
-		id = FRA_begin_economic_recovery
-		icon = GFX_goal_generic_construct_infrastructure
-		available = {
-		}
-		x = 1
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}		
-	}
-	
-	focus = {
-		id = FRA_mainland_industrial_reconstruction
-		icon = GFX_goal_generic_construct_infrastructure
-		available = {
-		}
-		prerequisite = { focus = FRA_begin_economic_recovery }
+		id = FRA_occupation_of_the_ruhr
+		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		#relative_position_id = FRA_begin_economic_recovery
 		cost = 10
 		ai_will_do = {
-			factor = 1
-		}		
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = france_occupies_the_ruhr
+			hidden_effect = {
+				FRA = {
+					transfer_state = 763
+					transfer_state = 42
+					transfer_state = 51
+				}
+				763 = {
+					set_demilitarized_zone = no
+				}
+				42 = {
+					set_demilitarized_zone = no
+				}
+				51 = {
+					set_demilitarized_zone = no
+				}
+			}
+			GER = {
+				set_country_flag = occupation_of_the_ruhr
+			}
+		}
 	}
 	
 	focus = {
-		id = FRA_construct_additional_industry
-		icon = GFX_goal_generic_construct_infrastructure
-		available = {
-		}
-		prerequisite = { focus = FRA_mainland_industrial_reconstruction }
+		id = FRA_execute_the_freebooter
+		icon = GFX_focus_FRA_execute_the_freebooter
+		prerequisite = { focus = FRA_occupation_of_the_ruhr }
+		relative_position_id = FRA_occupation_of_the_ruhr
 		x = 0
-		y = 2
-		#relative_position_id = FRA_mainland_industrial_reconstruction
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}		
-	}
-	
-	focus = {
-		id = FRA_finalize_mainland_reconstruction
-		icon = GFX_goal_generic_construct_infrastructure
-		available = {
-		}
-		prerequisite = { focus = FRA_construct_additional_industry }
-		x = 0
-		y = 3
-		#relative_position_id = FRA_construct_additional_industry
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}		
-	}
-	
-	focus = {
-		id = FRA_colonial_industrialization
-		icon = GFX_goal_generic_construct_infrastructure
-		available = {
-		}
-		prerequisite = { focus = FRA_begin_economic_recovery }
-		x = 2
 		y = 1
-		#relative_position_id = FRA_begin_economic_recovery
 		cost = 10
 		ai_will_do = {
-			factor = 1
-		}		
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_idea = FRA_rebellion_in_the_ruhr
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			remove_ideas = FRA_rebellion_in_the_ruhr
+			GER = {
+				set_country_flag = france_killed_the_freebooter
+			}
+		}
 	}
 	
 	focus = {
-		id = FRA_further_colonial_industrialization
-		icon = GFX_goal_generic_construct_infrastructure
-		available = {
-		}
-		prerequisite = { focus = FRA_colonial_industrialization }
-		x = 2
+		id = FRA_withdraw_from_the_ruhr
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = FRA_execute_the_freebooter }
+		relative_position_id = FRA_occupation_of_the_ruhr
+		x = 0
 		y = 2
-		#relative_position_id = FRA_colonial_industrialization
 		cost = 10
 		ai_will_do = {
-			factor = 1
-		}		
-	}
-	
-	focus = {
-		id = FRA_finalize_colonial_industry
-		icon = GFX_goal_generic_construct_infrastructure
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
 		available = {
 		}
-		prerequisite = { focus = FRA_further_colonial_industrialization }
-		x = 2
-		y = 3
-		#relative_position_id = FRA_further_colonial_industrialization
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}		
-	}
-	
-	focus = {
-		id = FRA_finish_economic_recovery
-		icon = GFX_goal_generic_construct_infrastructure
-		available = {
+		
+		bypass = {
 		}
-		prerequisite = { focus = FRA_finalize_mainland_reconstruction }
-		prerequisite = { focus = FRA_finalize_colonial_industry }
-		x = 1
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}		
-	}
-	
-	focus = {
-		id = FRA_begin_economic_expansion
-		icon = GFX_goal_generic_construct_infrastructure
-		available = {
+
+		completion_reward = {
+			GER = {
+				clr_country_flag = occupation_of_the_ruhr
+			}
 		}
-		prerequisite = { focus = FRA_finish_economic_recovery }
-		x = 1
-		y = 5
-		#relative_position_id = FRA_finish_economic_recovery
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}		
 	}
 }

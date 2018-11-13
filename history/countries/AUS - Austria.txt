@@ -4,6 +4,81 @@ set_research_slots = 3
 
 1919.6.28 = {
 	oob = "AUS_1919"
+	
+	set_cosmetic_tag = AUS_1919
+	
+	set_politics = {
+
+		parties = {
+			neutrality = { 
+				popularity = 51
+			}
+
+			fascism = {
+				popularity = 1
+			}
+
+			democratic = {
+				popularity = 48
+			}
+			
+			communism = {
+				popularity = 0
+			}
+		}
+		
+		ruling_party = democratic
+		last_election = "1919.2.16"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	
+	create_country_leader = {
+		name = "Karl Renner"
+		desc = "POLITICS_KARL_RENNER_DESC"
+		picture = "Portrait_Austria_Karl_Renner.dds"
+		expire = "1965.1.1"
+		ideology = socialism
+		traits = {
+			#
+		}
+	}
+	
+	create_country_leader = {
+		name = "Franz Koritschoner"
+		desc = "POLITICS_FRANZ_KORITSCHONER_DESC"
+		picture = "Portrait_Austria_Franz_Koritschoner.dds"
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {
+			#
+		}
+	}
+	
+	create_country_leader = {
+		name = "Walter Riehl"
+		desc = "POLITICS_WALTER_RIEHL_DESC"
+		picture = "Portrait_Austria_Walter_Riehl.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
+	
+	create_country_leader = {
+		name = "Ignaz Seipel"
+		desc = "POLITICS_WALTER_RIEHL_DESC"
+		picture = "Portrait_Austria_Walter_Riehl.dds"
+		expire = "1965.1.1"
+		ideology = centrism
+		traits = {
+			#
+		}
+	}
+	
+	set_party_name = { ideology = neutrality long_name = AUS_christian_social_party_long name = AUS_christian_social_party }
+	set_party_name = { ideology = communism long_name = AUS_communist_party_of_german_austria_long name = AUS_communist_party_of_german_austria }
 }
 
 1936.1.1 = {

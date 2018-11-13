@@ -1,0 +1,176 @@
+#####################################
+### 	Treaty of Versailles	 ####
+#####################################
+
+escalate_treaty_of_versailles = {
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles
+			has_country_flag = france_agreed_to_concessions
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions
+			remove_idea = GER_treaty_of_versailles
+		}
+	}
+	
+	### NO CONCESSIONS ###
+	### Treaty of Versailles
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law
+			remove_idea = GER_treaty_of_versailles
+		}
+	}
+	### Treaty of Versailles National Disarmament Law
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_national_disarmament_law
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+			remove_idea = GER_treaty_of_versailles_national_disarmament_law
+		}
+	}
+	
+	### Treaty of Versailles National Disarmament Law Rathenau
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium
+			remove_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+		}
+	}
+	
+	### Treaty of Versailles National Disarmament Law Moratorium
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_national_disarmament_law_moratorium
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law_moratorium_ruhr
+			remove_idea = GER_treaty_of_versailles_national_disarmament_law_moratorium
+		}
+	}
+	
+	### Treaty of Versailles National Disarmament Law Rathenau Moratorium
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium_ruhr
+			remove_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium
+		}
+	}
+	
+	### Treaty of Versailles National Disarmament Law RUHR
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_national_disarmament_law
+			has_completed_focus = GER_negotiate_payment_moratorium
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law_ruhr
+			remove_idea = GER_treaty_of_versailles_national_disarmament_law
+		}
+	}
+	
+	### Treaty of Versailles National Disarmament Law Rathenau RUHR
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+			has_completed_focus = GER_negotiate_payment_moratorium
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_ruhr
+			remove_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+		}
+	}
+	
+	### CONCESSIONS ###
+	### Treaty of Versailles Concessions
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law
+			remove_idea = GER_treaty_of_versailles_concessions
+		}
+	}
+	
+	### Treaty of Versailles Concessions National Disarmament Law
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
+			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law
+		}
+	}
+	
+	### Treaty of Versailles Concessions National Disarmament Law Rathenau
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium
+			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
+		}
+	}
+	
+	### Treaty of Versailles Concessions National Disarmament Law RUHR
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law
+			has_completed_focus = GER_negotiate_payment_moratorium
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_ruhr
+			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law
+		}
+	}
+	
+	### Treaty of Versailles Concessions National Disarmament Law Moratorium RUHR
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium
+			has_completed_focus = GER_negotiate_payment_moratorium
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium_ruhr
+			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium
+		}
+	}
+	
+	### Treaty of Versailles Concessions National Disarmament Law Rathenau RUHR
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
+			has_completed_focus = GER_negotiate_payment_moratorium
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_ruhr
+			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
+		}
+	}
+	
+	### Treaty of Versailles Concessions National Disarmament Law Rathenau Moratorium RUHR
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium_ruhr
+			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium
+		}
+	}
+}

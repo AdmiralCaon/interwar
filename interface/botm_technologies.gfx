@@ -90,6 +90,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/naval_bomber_1928.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_infantry_weapons_1922_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_1922.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_weapons_1926_medium"
+		texturefile = "gfx/interface/technologies/infantry_equipment_1926.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_early_motorised_medium"
+		texturefile = "gfx/interface/technologies/motorized_equipment_0.dds"
+	}
+
 	### ENG
 
 	SpriteType = {

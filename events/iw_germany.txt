@@ -133,6 +133,7 @@ country_event = {
 		}
 		GER = {
 			country_event = { id = iw_germany.8 days = 1 }
+			set_country_flag = france_agreed_to_concessions
 		}
 	}
 	
@@ -183,10 +184,7 @@ country_event = {
 	option = {
 		name = iw_germany.8.a
 		
-		swap_ideas = {
-			add_idea = GER_treaty_of_versailles_concessions
-			remove_idea = GER_treaty_of_versailles
-		}
+		escalate_treaty_of_versailles = yes
 	}
 }
 
@@ -228,21 +226,7 @@ country_event = {
 	option = {
 		name = iw_germany.10.a
 		
-		if = {
-			limit = {
-				has_idea = GER_treaty_of_versailles_national_disarmament_law_concessions
-				}
-			swap_ideas = {
-				add_idea = GER_treaty_of_versailles_national_disarmament_law_concessions_rathenau
-				remove_idea = GER_treaty_of_versailles_national_disarmament_law_concessions
-			}
-			else = {
-				swap_ideas = {
-					add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
-					remove_idea = GER_treaty_of_versailles_national_disarmament_law
-				}
-			}
-		}
+		escalate_treaty_of_versailles = yes
 	}
 }
 
@@ -297,41 +281,5 @@ country_event = {
 	option = {
 		name = iw_germany.13.a
 		
-		if = {
-			limit = {
-				has_idea = GER_treaty_of_versailles_national_disarmament_law_concessions_rathenau
-				}
-			swap_ideas = {
-				add_idea = GER_treaty_of_versailles_national_disarmament_law_concessions_rathenau_moratorium
-				remove_idea = GER_treaty_of_versailles_national_disarmament_law_concessions_rathenau
-			}
-		}
-		if = {
-			limit = {
-				has_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
-			}
-			swap_ideas = {
-				add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium
-				remove_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
-			}
-		}
-		if = {
-			limit = {
-				has_idea = GER_treaty_of_versailles_national_disarmament_law_concessions
-			}
-			swap_ideas = {
-				add_idea = GER_treaty_of_versailles_national_disarmament_law_concessions_moratorium
-				remove_idea = GER_treaty_of_versailles_national_disarmament_law_concessions
-			}
-		}
-		if = {
-			limit = {
-				has_idea = GER_treaty_of_versailles_national_disarmament_law
-			}
-			swap_ideas = {
-				add_idea = GER_treaty_of_versailles_national_disarmament_law_moratorium
-				remove_idea = GER_treaty_of_versailles_national_disarmament_law
-			}
-		}
-	}
+	escalate_treaty_of_versailles = yes
 }

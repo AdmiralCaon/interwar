@@ -9,3 +9,6 @@
  kapp_returns_control_of_government:0 "§YWolfgang Kapp§! returns control of the government and resigns."
  hyperinflation_folds_back:0 "§YDecline of the German Mark§! and §YInflation§! will merge."
  treaty_of_versailles_disarmament_law:0 "The §YNational Disarmament Law§! will be implemented and the manpower will be brought back to the number permitted by the §YTreaty of Versailles§!."
+ french_occupied_ruhr:0 "§Y[FRA.GetName]§! has occupied the Ruhr."
+ france_occupies_the_ruhr:0 "§Y[FRA.GetName]§! will occupy the Ruhr area."
+ france_killed_the_freebooter:0 "§YAlbert Leo Schlageter§! has been executed."

@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		FRA_rebellion_in_the_ruhr = {
+			
+			allowed = {
+				original_tag = "FRA"
+			}
+			
+			picture = chi_hyper_inflation3
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.1
+				stability_weekly = -0.05
+			}
+		}
+	}
+}
