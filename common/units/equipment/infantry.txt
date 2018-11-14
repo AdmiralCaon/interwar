@@ -91,6 +91,27 @@ equipments = {
 
 		build_cost_ic = 0.5
 	}
+	
+	infantry_equipment_1930 = {
+		year = 1930
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_1926
+		priority = 10
+		visual_level = 1
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 3
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 0.8
+		ap_attack = 3
+		air_attack = 0
+
+		build_cost_ic = 0.5
+	}
 
 	# Regular infantry  1936
 	infantry_equipment_1 = {
