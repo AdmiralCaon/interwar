@@ -1,0 +1,21 @@
+﻿###########################
+# Interwar Germany Events
+###########################
+
+add_namespace = iw_news
+
+# Kapp Putsch
+country_event = {
+	id = iw_news.1
+	title = iw_news.1.t
+	desc = iw_news.1.d
+	picture = GFX_news_event_kapp_putsch
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_news.1.a
+	}
+}

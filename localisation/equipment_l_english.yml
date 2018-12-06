@@ -2887,8 +2887,8 @@
 
  ENG_infantry_equipment_0:0 "Rifle No.1 MkIII"
  ENG_infantry_equipment_0_short:0 "Rifle No.1 MkIII"
- ENG_infantry_equipment_1:0 "Rifle No.4 MkI"
- ENG_infantry_equipment_1_short:0 "Rifle No.4 MkI"
+ ENG_infantry_equipment_1:0 "Rifle No.4 MkII"
+ ENG_infantry_equipment_1_short:0 "Rifle No.4 MkII"
  ENG_infantry_equipment_2:0 "Sten MkII"
  ENG_infantry_equipment_2_short:0 "Sten MkII"
  ENG_infantry_equipment_3:0 "Sterling MkI"
@@ -2912,8 +2912,6 @@
  USA_infantry_at2:0 "M20 recoilless rifle"
  USA_support_weapons:0 "BAR & Stokes mortar"
  USA_support_weapons2:0 "M1917 Browning MG & M2 60 mm mortar"
- USA_support_weapons3:0 "M1919 Browning MG & M1 mortar"
- USA_support_weapons4:0 "M1941 Johnson MG & M2 4.2 inch mortar"
 
  ITA_infantry_equipment_0:0 "Carcano M91"
  ITA_infantry_equipment_0_short:0 "Carcano M91"
@@ -2934,8 +2932,6 @@
  FRA_infantry_equipment_3_short:0 "MAS-40"
  FRA_support_weapons:0 "FM Chauchat & Stokes mortar"
  FRA_support_weapons2:0 "Hotchkiss M1914 & Brandt Mle 1935"
- FRA_support_weapons3:0 "FM 24/29 & Brandt Mle 27/31"
- FRA_support_weapons4:0 "Hotchkiss M1922 & Brandt Mle 1942"
 
  JAP_infantry_equipment_0:1 "Type 38 Rifle"
  JAP_infantry_equipment_0_short:1 "Type 38"

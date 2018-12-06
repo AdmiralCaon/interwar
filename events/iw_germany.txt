@@ -9,6 +9,7 @@ country_event = {
 	id = iw_germany.1
 	title = iw_germany.1.t
 	desc = iw_germany.1.d
+	picture = GFX_report_event_kapp_putsch
 	
 	fire_only_once = yes
 	
@@ -39,10 +40,11 @@ country_event = {
 			remove_ideas = {
 				GER_friedrich_ebert
 			}	
-		set_party_name = { ideology = neutrality long_name = GER_reichswehr name = GER_reichswehr }
+		set_party_name = { ideology = neutrality long_name = GER_nationale_vereinigung name = GER_nationale_vereinigung }
 		country_event = { id = iw_germany.2 days = 2 }
 		news_event = { id = iw_news.1 hours = 12 }
 		set_cosmetic_tag = GER_kapp_germany
+		remove_unit_leader = 90001
 		}
 	}
 }
@@ -63,7 +65,7 @@ country_event = {
 	option = {
 		name = iw_germany.2.a
 		
-		set_country_flag = GER_matthias_erzberger_assassinated
+		set_country_flag = GER_walther_rathenau_assassinated
 	}
 }
 
@@ -77,7 +79,6 @@ country_event = {
 	
 	trigger = {
 		tag = GER
-		date > 1921.8.31
 		has_country_flag = matthias_erzberger_assassinated
 	}
 	
@@ -112,6 +113,7 @@ country_event = {
 		ai_chance = { factor = 80 }
 		GER = {
 			country_event = { id = iw_germany.6 days = 1 }
+			set_country_flag = france_disagreed_to_concessions
 		}
 	}
 }
@@ -202,6 +204,7 @@ country_event = {
 		ai_chance = { factor = 10 }
 		GER = {
 			country_event = { id = iw_germany.10 days = 1 }
+			set_country_flag = france_agreed_to_rathenau
 		}
 	}
 	
@@ -211,6 +214,7 @@ country_event = {
 		ai_chance = { factor = 90 }
 		GER = {
 			country_event = { id = iw_germany.11 days = 1 }
+			set_country_flag = france_disagreed_to_rathenau
 		}
 	}
 }
@@ -257,6 +261,7 @@ country_event = {
 		ai_chance = { factor = 10 }
 		GER = {
 			country_event = { id = iw_germany.13 days = 1 }
+			set_country_flag = france_agreed_to_moratorium
 		}
 	}
 	
@@ -266,6 +271,7 @@ country_event = {
 		ai_chance = { factor = 90 }
 		GER = {
 			country_event = { id = iw_germany.14 days = 1 }
+			set_country_flag = france_disagreed_to_moratorium
 		}
 	}
 }
@@ -281,5 +287,77 @@ country_event = {
 	option = {
 		name = iw_germany.13.a
 		
-	escalate_treaty_of_versailles = yes
+		escalate_treaty_of_versailles = yes
+	}
+}
+
+# Payment Moratorium - France Declined
+country_event = {
+	id = iw_germany.14
+	title = iw_germany.14.t
+	desc = iw_germany.14.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.11.a
+	}
+}
+
+# Erzberger Assassination
+country_event = {
+	id = iw_germany.15
+	title = iw_germany.15.t
+	desc = iw_germany.15.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date > 1921.8.31
+		has_country_flag = matthias_erzberger_assassinated
+	}
+	
+	option = {
+		name = iw_germany.15.a
+	}
+}
+
+# reAppointment of von Kahr and buddies
+country_event = {
+	id = iw_germany.16
+	title = iw_germany.16.t
+	desc = iw_germany.16.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date > 1924.1.1
+		has_completed_focus = GER_oust_von_kahr
+	}
+	
+	option = {
+		name = iw_germany.16.a
+		
+		add_ideas = { GER_bavarian_strong_rightwing }
+	}
+}
+
+# meeting with Eugen von Knilling/Bavarian PM
+country_event = {
+	id = iw_germany.17
+	title = iw_germany.17.t
+	desc = iw_germany.17.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.16.a
+		
+		swap_ideas = {
+			add_idea = GER_bavarian_strong_rightwing_1
+			remove_idea = GER_bavarian_strong_rightwing
+		}
+	}
 }

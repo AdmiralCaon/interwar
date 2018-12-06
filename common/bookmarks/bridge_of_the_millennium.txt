@@ -53,6 +53,7 @@ bookmarks = {
 				ITA_demobilising_army
 			}	
 			focuses = {
+				ITA_march_on_rome
 			}		
 		}
 		"JAP"={

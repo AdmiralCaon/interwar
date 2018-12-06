@@ -33,4 +33,25 @@ leader_traits = {
 		
 		army_morale_factor = 0.05
 	}
+	
+	the_retired_warhero = {
+		random = no
+		
+		war_support_factor = 0.1
+		high_command_cost_factor = -0.1
+		army_chief_cost_factor = -0.1
+	}
+	
+	retired_general = {
+		random = no
+		
+		experience_gain_army = 0.05
+	}
+	
+	anti_communist = {
+		random = no
+		
+		communism_acceptance = -25
+		communism_drift = -0.05
+	}
 }

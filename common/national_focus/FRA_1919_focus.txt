@@ -13,7 +13,7 @@ focus_tree = {
 	default = no
 	
 	focus = {
-		id = FRA_the_treaty_of_versailles
+		id = FRA_ratify_the_treaty_of_versailles
 		icon = GFX_focus_FRA_government
 		x = 9
 		y = 0
@@ -32,34 +32,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
-		}
-	}
-	
-	focus = {
-		id = FRA_defend_the_treaty
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = FRA_the_treaty_of_versailles }
-		relative_position_id = FRA_the_treaty_of_versailles
-		x = 0
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
+			add_political_power = 100
 		}
 	}
 	
@@ -158,6 +131,7 @@ focus_tree = {
 		completion_reward = {
 			GER = {
 				clr_country_flag = occupation_of_the_ruhr
+				set_country_flag = france_left_the_ruhr
 			}
 		}
 	}

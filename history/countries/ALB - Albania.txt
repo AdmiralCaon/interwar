@@ -1,7 +1,5 @@
 ﻿capital = 44
 
-1936.1.1 = {
-
 	OOB = "ALB_1936"
 
 	set_technology = {
@@ -60,5 +58,4 @@
 		planning_skill = 2
 		logistics_skill = 1
 	}
-}
 

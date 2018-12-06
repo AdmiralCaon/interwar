@@ -59,4 +59,14 @@ spriteTypes = {
 		name = "GFX_idea_GER_treaty_of_versailles"
 		texturefile = "gfx/interface/ideas/idea_GER_treaty_of_versailles.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_GER_waldemar_pabst"
+		texturefile = "gfx/interface/ideas/idea_waldemar_pabst.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_erich_ludendorff"
+		texturefile = "gfx/interface/ideas/idea_erich_ludendorff.dds"
+	}
 }

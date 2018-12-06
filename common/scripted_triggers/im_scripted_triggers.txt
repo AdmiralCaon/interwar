@@ -3,6 +3,9 @@ company_is_active = {
 	has_country_flag = USA_loening_founded
 	has_country_flag = USA_curtiss_founded
 	has_country_flag = USA_wright_founded
+	has_country_flag = GER_ig_farben_founded
+	has_country_flag = GER_north_american_aviation_founded
+	has_country_flag = USA_curtiss_wright_corporation_founded
 	NOT = {
 		has_country_flag = huff_daland_disbanded
 	}

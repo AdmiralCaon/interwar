@@ -19,16 +19,33 @@ escalate_treaty_of_versailles = {
 	if = {
 		limit = {
 			has_idea = GER_treaty_of_versailles
+			has_country_flag = france_disagreed_to_concessions
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_national_disarmament_law
 			remove_idea = GER_treaty_of_versailles
 		}
 	}
+	### Treaty of Versailles National Disarmament Law Appease The West
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_national_disarmament_law
+			has_country_flag = france_disagreed_to_concessions
+			has_country_flag = france_disagreed_to_moratorium
+			has_country_flag = france_disagreed_to_rathenau
+			has_country_flag = france_left_the_ruhr
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law_appease_the_west
+			remove_idea = GER_treaty_of_versailles_national_disarmament_law
+		}
+	}
 	### Treaty of Versailles National Disarmament Law
 	if = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_national_disarmament_law
+			has_country_flag = france_disagreed_to_concessions
+			has_country_flag = france_agreed_to_rathenau
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
@@ -36,10 +53,28 @@ escalate_treaty_of_versailles = {
 		}
 	}
 	
+	### Treaty of Versailles National Disarmament Law Rathenau Appease The West
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+			has_country_flag = france_disagreed_to_concessions
+			has_country_flag = france_agreed_to_rathenau
+			has_country_flag = france_disagreed_to_moratorium
+			has_country_flag = france_left_the_ruhr
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_appease_the_west
+			remove_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+		}
+	}
+	
 	### Treaty of Versailles National Disarmament Law Rathenau
 	if = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
+			has_country_flag = france_agreed_to_rathenau
+			has_country_flag = france_disagreed_to_concessions
+			has_country_flag = france_agreed_to_moratorium
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium
@@ -47,10 +82,36 @@ escalate_treaty_of_versailles = {
 		}
 	}
 	
-	### Treaty of Versailles National Disarmament Law Moratorium
+	### Treaty of Versailles National Disarmament Law Rathenau Moratorium Appease The West
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium
+			has_country_flag = france_disagreed_to_concessions
+			has_country_flag = france_agreed_to_rathenau
+			has_country_flag = france_agreed_to_moratorium
+			has_country_flag = france_left_the_ruhr
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium_appease_the_west
+			remove_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium
+		}
+	}
+	
+	### Treaty of Versailles National Disarmament Law Moratorium RUHR
 	if = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_national_disarmament_law_moratorium
+			has_country_flag = france_disagreed_to_rathenau
+			has_country_flag = france_disagreed_to_concessions
+			has_country_flag = france_agreed_to_moratorium
+			custom_trigger_tooltip = {
+				tooltip = french_occupied_ruhr
+				FRA = {
+					owns_state = 763
+					owns_state = 42
+					owns_state = 51
+				}
+			}
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_national_disarmament_law_moratorium_ruhr
@@ -58,10 +119,36 @@ escalate_treaty_of_versailles = {
 		}
 	}
 	
-	### Treaty of Versailles National Disarmament Law Rathenau Moratorium
+	### Treaty of Versailles National Disarmament Law Moratorium Appease The West
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_national_disarmament_law_moratorium
+			has_country_flag = france_disagreed_to_concessions
+			has_country_flag = france_agreed_to_moratorium
+			has_country_flag = france_disagreed_to_rathenau
+			has_country_flag = france_left_the_ruhr
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_national_disarmament_law_moratorium_appease_the_west
+			remove_idea = GER_treaty_of_versailles_national_disarmament_law_moratorium
+		}
+	}
+	
+	### Treaty of Versailles National Disarmament Law Rathenau Moratorium RUHR
 	if = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium
+			has_country_flag = france_agreed_to_rathenau
+			has_country_flag = france_agreed_to_moratorium
+			has_country_flag = france_disagreed_to_concessions
+			custom_trigger_tooltip = {
+				tooltip = french_occupied_ruhr
+				FRA = {
+					owns_state = 763
+					owns_state = 42
+					owns_state = 51
+				}
+			}
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium_ruhr
@@ -74,6 +161,17 @@ escalate_treaty_of_versailles = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_national_disarmament_law
 			has_completed_focus = GER_negotiate_payment_moratorium
+			has_country_flag = france_disagreed_to_concessions
+			has_country_flag = france_disagreed_to_rathenau
+			has_country_flag = france_disagreed_to_moratorium
+			custom_trigger_tooltip = {
+				tooltip = french_occupied_ruhr
+				FRA = {
+					owns_state = 763
+					owns_state = 42
+					owns_state = 51
+				}
+			}
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_national_disarmament_law_ruhr
@@ -86,6 +184,17 @@ escalate_treaty_of_versailles = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau
 			has_completed_focus = GER_negotiate_payment_moratorium
+			has_country_flag = france_agreed_to_rathenau
+			has_country_flag = france_disagreed_to_concessions
+			has_country_flag = france_disagreed_to_moratorium
+			custom_trigger_tooltip = {
+				tooltip = french_occupied_ruhr
+				FRA = {
+					owns_state = 763
+					owns_state = 42
+					owns_state = 51
+				}
+			}
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_national_disarmament_law_rathenau_ruhr
@@ -105,10 +214,27 @@ escalate_treaty_of_versailles = {
 		}
 	}
 	
+	### Treaty of Versailles Concessions National Disarmament Law Appease The West
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law
+			has_country_flag = france_agreed_to_concessions
+			has_country_flag = france_disagreed_to_rathenau
+			has_country_flag = france_disagreed_to_moratorium
+			has_country_flag = france_left_the_ruhr
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_appease_the_west
+			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law
+		}
+	}
+	
 	### Treaty of Versailles Concessions National Disarmament Law
 	if = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law
+			has_country_flag = france_agreed_to_concessions
+			has_country_flag = france_agreed_to_rathenau
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
@@ -116,14 +242,47 @@ escalate_treaty_of_versailles = {
 		}
 	}
 	
+	### Treaty of Versailles Concessions National Disarmament Law Rathenau Appease The West
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
+			has_country_flag = france_agreed_to_concessions
+			has_country_flag = france_agreed_to_rathenau
+			has_country_flag = france_disagreed_to_moratorium
+			has_country_flag = france_left_the_ruhr
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_appease_the_west
+			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
+		}
+	}
+	
 	### Treaty of Versailles Concessions National Disarmament Law Rathenau
 	if = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
+			has_country_flag = france_agreed_to_rathenau
+			has_country_flag = france_agreed_to_concessions
+			has_country_flag = france_agreed_to_moratorium
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium
 			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
+		}
+	}
+	
+	### Treaty of Versailles Concessions National Disarmament Law Rathenau Moratorium Appease The West
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium
+			has_country_flag = france_agreed_to_concessions
+			has_country_flag = france_agreed_to_rathenau
+			has_country_flag = france_agreed_to_moratorium
+			has_country_flag = france_left_the_ruhr
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium_appease_the_west
+			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium
 		}
 	}
 	
@@ -132,6 +291,17 @@ escalate_treaty_of_versailles = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law
 			has_completed_focus = GER_negotiate_payment_moratorium
+			has_country_flag = france_agreed_to_concessions
+			has_country_flag = france_agreed_to_moratorium
+			has_country_flag = france_agreed_to_rathenau
+			custom_trigger_tooltip = {
+				tooltip = french_occupied_ruhr
+				FRA = {
+					owns_state = 763
+					owns_state = 42
+					owns_state = 51
+				}
+			}
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_ruhr
@@ -144,9 +314,36 @@ escalate_treaty_of_versailles = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium
 			has_completed_focus = GER_negotiate_payment_moratorium
+			has_country_flag = france_agreed_to_concessions
+			has_country_flag = france_agreed_to_moratorium
+			has_country_flag = france_disagreed_to_rathenau
+			custom_trigger_tooltip = {
+				tooltip = french_occupied_ruhr
+				FRA = {
+					owns_state = 763
+					owns_state = 42
+					owns_state = 51
+				}
+			}
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium_ruhr
+			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium
+		}
+	}
+	
+	### Treaty of Versailles Concessions National Disarmament Law Moratorium Appease The West
+	if = {
+		limit = {
+			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium
+			has_completed_focus = GER_negotiate_payment_moratorium
+			has_country_flag = france_agreed_to_concessions
+			has_country_flag = france_agreed_to_moratorium
+			has_country_flag = france_disagreed_to_rathenau
+			has_country_flag = france_left_the_ruhr
+		}
+		swap_ideas = {
+			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium_appease_the_west
 			remove_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium
 		}
 	}
@@ -156,6 +353,17 @@ escalate_treaty_of_versailles = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau
 			has_completed_focus = GER_negotiate_payment_moratorium
+			has_country_flag = france_agreed_to_concessions
+			has_country_flag = france_agreed_to_rathenau
+			has_country_flag = france_disagreed_to_moratorium
+			custom_trigger_tooltip = {
+				tooltip = french_occupied_ruhr
+				FRA = {
+					owns_state = 763
+					owns_state = 42
+					owns_state = 51
+				}
+			}
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_ruhr
@@ -167,6 +375,17 @@ escalate_treaty_of_versailles = {
 	if = {
 		limit = {
 			has_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium
+			has_country_flag = france_agreed_to_concessions
+			has_country_flag = france_agreed_to_moratorium
+			has_country_flag = france_agreed_to_rathenau
+			custom_trigger_tooltip = {
+				tooltip = french_occupied_ruhr
+				FRA = {
+					owns_state = 763
+					owns_state = 42
+					owns_state = 51
+				}
+			}
 		}
 		swap_ideas = {
 			add_idea = GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium_ruhr

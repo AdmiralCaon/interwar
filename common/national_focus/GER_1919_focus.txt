@@ -14,12 +14,404 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1100 }
 	
-	shared_focus = GER_military_decree
+	focus = {
+		id = GER_military_decree
+		icon = GFX_focus_GER_military_decree
+		x = 7
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			army_experience = 10
+			add_command_power = 20
+		}
+	}
+
+	focus = {
+		id = GER_recall_military_staff
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = GER_military_decree }
+		relative_position_id = GER_military_decree
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			command_power > 79
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_freikorps_2
+				remove_idea = GER_freikorps
+			}
+		}
+	}
+
+	focus = {
+		id = GER_truppenamt
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = GER_recall_military_staff }
+		relative_position_id = GER_military_decree
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = {
+				has_idea = GER_freikorps
+			}
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = {
+				GER_truppenamt_idea
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = GER_vorlaufiges_reichsheer
+		icon = GFX_focus_GER_military_decree
+		prerequisite = { focus = GER_truppenamt }
+		relative_position_id = GER_truppenamt
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = GER_vorlaufiges_reichsmarine
+		icon = GFX_focus_GER_vorlaufiges_reichsmarine
+		prerequisite = { focus = GER_truppenamt }
+		relative_position_id = GER_truppenamt
+		x = -4
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			navy_experience = 15
+		}
+	}
+
+	focus = {
+		id = GER_dornier_do_j
+		icon = GFX_focus_GER_dornier_do_j
+		prerequisite = { focus = GER_vorlaufiges_reichsmarine }
+		relative_position_id = GER_vorlaufiges_reichsmarine
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = naval_bomber_1923
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_morse_code
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = GER_vorlaufiges_reichsmarine focus = GER_the_teleprinter }
+		relative_position_id = GER_the_electrical_telegraph
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = morse_code
+			}
+		}
+	}
+
+	focus = {
+		id = GER_kar_98a
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = GER_vorlaufiges_reichsheer }
+		relative_position_id = GER_vorlaufiges_reichsheer
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				bonus = 0.5
+				uses = 1
+				technology = infantry_weapons_1922
+			}
+		}
+	}
+
+	focus = {
+		id = GER_support_companies
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = GER_kar_98a }
+		relative_position_id = GER_vorlaufiges_reichsheer
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = tech_support
+			}
+		}
+	}
+
+	focus = {
+		id = GER_artillery_instruments
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = GER_kar_98a }
+		relative_position_id = GER_vorlaufiges_reichsheer
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = interwar_artillery
+			}
+		}
+	}
+
+	focus = {
+		id = GER_reorganisation
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = GER_kar_98a focus = GER_support_companies focus = GER_artillery_instruments }
+		relative_position_id = GER_artillery_instruments
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = GER_outlaw_the_freikorps
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = GER_reorganisation }
+		mutually_exclusive = { focus = GER_align_the_freikorps }
+		relative_position_id = GER_call_upon_the_nationale_vereinigung
+		x = -2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_freikorps_outlawed
+				remove_idea = GER_freikorps_2
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_ubergangsheer
+		icon = GFX_focus_GER_military_decree
+		prerequisite = { focus = GER_outlaw_the_freikorps }
+		prerequisite = { focus = GER_national_disarmament_law }
+		relative_position_id = GER_outlaw_the_freikorps
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = GER_reichsheer
+		icon = GFX_focus_GER_military_decree
+		prerequisite = { focus = GER_ubergangsheer }
+		relative_position_id = GER_ubergangsheer
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			army_experience = 15
+		}
+	}
+
 	
 	focus = {
 		id = GER_consolidate_weimar_government
 		icon = GFX_focus_GER_weimar_germany
-		x = 9
+		x = 11
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -319,7 +711,7 @@ focus_tree = {
 		relative_position_id = GER_align_with_the_west
 		x = 1
 		y = 1
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 90
 		}
@@ -349,9 +741,9 @@ focus_tree = {
 	focus = {
 		id = GER_dolchstosslegende
 		icon = GFX_focus_GER_stab_in_the_back_myth
-		prerequisite = { focus = GER_replace_the_spd focus = GER_the_nsdap }
+		prerequisite = { focus = GER_replace_the_spd focus = GER_the_nsdap focus = GER_redeploy_jagow_police }
 		relative_position_id = GER_replace_the_spd
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -382,6 +774,7 @@ focus_tree = {
 		id = GER_seek_concessions_from_the_allies
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = GER_dolchstosslegende }
+		prerequisite = { focus = GER_replace_the_spd }
 		relative_position_id = GER_replace_the_spd
 		x = 0
 		y = 2
@@ -442,7 +835,7 @@ focus_tree = {
 		relative_position_id = GER_replace_the_spd
 		x = 0
 		y = 4
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 90
 		}
@@ -524,13 +917,39 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = GER_treaty_of_rapallo
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = GER_erfullungspolitik }
+		prerequisite = { focus = GER_reichsheer }
+		relative_position_id = GER_erfullungspolitik
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			# research boost on tanks
+		}
+	}
+	
+	focus = {
 		id = GER_oust_von_kahr
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = GER_erfullungspolitik }
 		relative_position_id = GER_replace_the_spd
 		x = 0
 		y = 7
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 90
 		}
@@ -556,7 +975,7 @@ focus_tree = {
 		relative_position_id = GER_replace_the_spd
 		x = 0
 		y = 8
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 90
 		}
@@ -593,7 +1012,7 @@ focus_tree = {
 		relative_position_id = GER_replace_the_spd
 		x = 0
 		y = 9
-		cost = 10
+		cost = 4
 		ai_will_do = {
 			factor = 90
 		}
@@ -667,6 +1086,60 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = { GER_cuno_strikes }
+			add_stability = -0.20
+		}
+	}
+	
+	focus = {
+		id = GER_financial_appeasement
+		icon = GFX_focus_generic_monetary_focus
+		prerequisite = { focus = GER_deal_with_cuno_strikes }
+		prerequisite = { focus = GER_appease_the_west }
+		relative_position_id = GER_deal_with_cuno_strikes
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			# probably a national spirit for consumer goods
+			# DO NOT EDIT VERSAILLES
+		}
+	}
+	
+	focus = {
+		id = GER_french_access_to_the_ruhr
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = GER_deal_with_cuno_strikes }
+		relative_position_id = GER_deal_with_cuno_strikes
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			# COME BACK AFTER MAN THE GUNS RELEASE
+			# French wanted access to resources in the Ruhr, give them access to Steel using the Man the Guns feature
 		}
 	}
 	
@@ -712,9 +1185,9 @@ focus_tree = {
 	focus = {
 		id = GER_appease_the_west
 		icon = GFX_focus_chi_reach_out_to_france
-		prerequisite = { focus = GER_resignation_of_cuno }
-		relative_position_id = GER_resignation_of_cuno
-		x = 0
+		prerequisite = { focus = GER_resignation_of_cuno focus = GER_deal_with_cuno_strikes }
+		relative_position_id = GER_deal_with_cuno_strikes
+		x = 1
 		y = 1
 		cost = 8
 		ai_will_do = {
@@ -724,25 +1197,53 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
+			has_country_flag = france_left_the_ruhr
 		}
 		
 		bypass = {
 		}
 
 		completion_reward = {
-			# lower consumer goods on Versailles
+			escalate_treaty_of_versailles = yes
+		}
+	}
+	
+	focus = {
+		id = GER_give_asylum_to_wilhelm_iii
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = GER_resignation_of_cuno }
+		relative_position_id = GER_resignation_of_cuno
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_leader = { name = "Gustav Stresemann" }
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.10 }
+			custom_effect_tooltip = given_asylum_to_wilhelm_iii
+			set_country_flag = given_asylum_to_wilhelm_iii
 		}
 	}
 	
 	focus = {
 		id = GER_beerhall_putsch
 		icon = GFX_focus_generic_strike_at_democracy2
-		prerequisite = { focus = GER_resignation_of_cuno }
-		prerequisite = { focus = GER_honour_the_german_freebooter }
+		prerequisite = { focus = GER_resignation_of_cuno focus = GER_honour_the_german_freebooter }
 		relative_position_id = GER_resignation_of_cuno
-		x = 2
+		x = 3
 		y = 1
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 90
 		}
@@ -761,13 +1262,40 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = GER_ban_volkischer_beobachter
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_beerhall_putsch focus = GER_appease_the_west }
+		relative_position_id = GER_appease_the_west
+		x = 3
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			remove_ideas = { GER_voelkischer_beobachter }
+			add_popularity = { ideology = fascism popularity = -0.10 }
+		}
+	}
+	
+	focus = {
 		id = GER_remove_stresemann
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = GER_appease_the_west }
+		prerequisite = { focus = GER_resignation_of_cuno }
 		relative_position_id = GER_resignation_of_cuno
 		x = 0
 		y = 2
-		cost = 8
+		cost = 4
 		ai_will_do = {
 			factor = 90
 		}
@@ -795,8 +1323,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_print_voelkischer_beobachter
-		icon = GFX_goal_generic_propaganda
+		id = GER_print_volkischer_beobachter
+		icon = GFX_focus_GER_print_volkischer_beobachter
 		prerequisite = { focus = GER_national_disarmament_law }
 		prerequisite = { focus = GER_the_nsdap }
 		relative_position_id = GER_replace_the_spd
@@ -825,8 +1353,8 @@ focus_tree = {
 	focus = {
 		id = GER_oust_drexler
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = GER_print_voelkischer_beobachter }
-		relative_position_id = GER_print_voelkischer_beobachter
+		prerequisite = { focus = GER_print_volkischer_beobachter }
+		relative_position_id = GER_print_volkischer_beobachter
 		x = 0
 		y = 1
 		cost = 5
@@ -860,7 +1388,7 @@ focus_tree = {
 		id = GER_disrupt_bayernbund_speech
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = GER_oust_drexler }
-		relative_position_id = GER_print_voelkischer_beobachter
+		relative_position_id = GER_print_volkischer_beobachter
 		x = 0
 		y = 2
 		cost = 5
@@ -882,10 +1410,35 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = GER_jugendbund_der_nsdap
+		icon = GFX_focus_GER_jugendbund_der_nsdap
+		prerequisite = { focus = GER_disrupt_bayernbund_speech }
+		relative_position_id = GER_disrupt_bayernbund_speech
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = { GER_jugendbund }
+		}
+	}
+	
+	focus = {
 		id = GER_honour_the_german_freebooter
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = GER_negotiate_payment_moratorium }
-		prerequisite = { focus = GER_disrupt_bayernbund_speech }
+		prerequisite = { focus = GER_jugendbund_der_nsdap }
 		relative_position_id = GER_negotiate_payment_moratorium
 		x = 2
 		y = 1
@@ -915,38 +1468,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_emminger_reforms
-		icon = GFX_focus_GER_judicial_system
-		prerequisite = { focus = GER_remove_stresemann }
-		relative_position_id = GER_resignation_of_cuno
-		x = 1
-		y = 3
-		cost = 5
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-			add_popularity = { ideology = democratic popularity = -0.10 }
-			add_political_power = 50
-		}
-	}
-	
-	focus = {
 		id = GER_enabling_act
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = GER_remove_stresemann }
-		relative_position_id = GER_resignation_of_cuno
-		x = -1
-		y = 3
+		relative_position_id = GER_remove_stresemann
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 90
@@ -968,11 +1495,11 @@ focus_tree = {
 	focus = {
 		id = GER_beerhall_trials
 		icon = GFX_focus_GER_judicial_system
-		prerequisite = { focus = GER_emminger_reforms }
+		prerequisite = { focus = GER_remove_stresemann }
 		prerequisite = { focus = GER_beerhall_putsch }
-		relative_position_id = GER_beerhall_putsch
-		x = 0
-		y = 3
+		relative_position_id = GER_remove_stresemann
+		x = 3
+		y = 1
 		cost = 8
 		ai_will_do = {
 			factor = 90
@@ -1006,6 +1533,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
+			has_completed_focus = GER_economic_treaty_with_us
+			has_completed_focus = GER_treaty_of_rapallo
 			has_country_flag = beerhall_trials_complete
 		}
 		
@@ -1015,6 +1544,384 @@ focus_tree = {
 		completion_reward = {
 			load_focus_tree = GER_1924_focus
 			add_stability = 0.10
+		}
+	}
+	
+		focus = {
+		id = GER_restoration_of_the_german_economy
+		icon = GFX_focus_generic_industry_1
+		x = 14
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			add_timed_idea = { idea = GER_last_money_reserves  days = 180 }
+		}
+	}
+		
+	focus = {
+		id = GER_import_more_food
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = GER_restoration_of_the_german_economy }
+		relative_position_id = GER_restoration_of_the_german_economy
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+		factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_decreased_food_shortage
+				remove_idea = GER_national_food_shortage
+			}
+			swap_ideas = {
+				add_idea = GER_decline_of_the_mark_2
+				remove_idea = GER_decline_of_the_mark_1
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_increased_unemployment_benefits
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = GER_import_more_food }
+		relative_position_id = GER_restoration_of_the_german_economy
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+			date > 1920.3.20
+		}
+
+		completion_reward = {
+			add_ideas = { GER_unemployment_benefits }
+			swap_ideas = {
+				add_idea = GER_decline_of_the_mark_3
+				remove_idea = GER_decline_of_the_mark_2
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_provide_winter_supplement
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = GER_increased_unemployment_benefits }
+		relative_position_id = GER_restoration_of_the_german_economy
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+			date > 1920.3.20
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_decline_of_the_mark_4
+				remove_idea = GER_decline_of_the_mark_3
+			}
+			add_timed_idea = { idea = GER_winter_supplement days = 90 }
+		}
+	}
+		
+	focus = {
+		id = GER_renewed_unemployment_benefits
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = GER_provide_winter_supplement }
+		relative_position_id = GER_restoration_of_the_german_economy
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_leader = { name = "Hermann Müller" }
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_improved_unemployment_benefits
+				remove_idea = GER_unemployment_benefits
+			}
+			swap_ideas = {
+				add_idea = GER_decline_of_the_mark_5
+				remove_idea = GER_decline_of_the_mark_4
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_encourage_ruhr_resistance
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = GER_renewed_unemployment_benefits }
+		relative_position_id = GER_renewed_unemployment_benefits
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_leader = { name = "Wilhelm Cuno" }
+			custom_trigger_tooltip = {
+				tooltip = french_occupied_ruhr
+				FRA = {
+					owns_state = 763
+					owns_state = 42
+					owns_state = 51
+				}
+			}
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = GER_renewed_unemployment_benefits
+					}
+				}
+				swap_ideas = {
+					add_idea = GER_decline_of_the_mark_5
+					remove_idea = GER_decline_of_the_mark_4
+				}
+				else = {
+					swap_ideas = {
+						add_idea = GER_decline_of_the_mark_6
+						remove_idea = GER_decline_of_the_mark_5
+					}
+				}
+			}
+			add_ideas = { GER_encouraged_ruhr_resistance }
+			FRA = {
+				add_ideas = { FRA_rebellion_in_the_ruhr }
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_buy_back_papiermark
+		icon = GFX_focus_GER_buy_back_papiermark
+		prerequisite = { focus = GER_encourage_ruhr_resistance }
+		relative_position_id = GER_encourage_ruhr_resistance
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {	
+		}
+			
+		bypass = {
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_decline_of_the_mark_papiermark
+				remove_idea = GER_decline_of_the_mark_5
+			}
+			if = {
+				limit = {
+					has_idea = GER_decline_of_the_mark_4
+				}
+				swap_ideas = {
+					add_idea = GER_decline_of_the_mark_papiermark
+					remove_idea = GER_decline_of_the_mark_4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = GER_decline_of_the_mark_3
+				}
+				swap_ideas = {
+					add_idea = GER_decline_of_the_mark_papiermark
+					remove_idea = GER_decline_of_the_mark_3
+				}
+			}
+		}
+	}
+		
+		
+	focus = {
+		id = GER_call_off_ruhr_resistance
+		icon = GFX_focus_generic_peace
+		prerequisite = { focus = GER_buy_back_papiermark }
+		relative_position_id = GER_buy_back_papiermark
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_leader = { name = "Gustav Stresemann" }
+		}
+			
+		bypass = {
+		}
+			
+		completion_reward = {
+			remove_ideas = { GER_encouraged_ruhr_resistance }
+			add_popularity = { ideology = fascism popularity = -0.1 }
+		}
+	}
+		
+	focus = {
+		id = GER_the_rentenmark
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = GER_call_off_ruhr_resistance }
+		relative_position_id = GER_buy_back_papiermark
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_leader = { name = "Gustav Stresemann" }
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = hyperinflation_folds_back
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = GER_renewed_unemployment_benefits
+						}
+					}
+					swap_ideas = {
+						add_idea = GER_hyper_inflation_1
+						remove_idea = GER_hyper_inflation
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = GER_encourage_ruhr_resistance
+						}
+					}
+					swap_ideas = {
+						add_idea = GER_hyper_inflation_2
+						remove_idea = GER_hyper_inflation
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							AND = {
+								has_completed_focus = GER_renewed_unemployment_benefits
+								has_completed_focus = GER_encourage_ruhr_resistance
+							}
+						}
+					}
+					swap_ideas = {
+						add_idea = GER_hyper_inflation_3
+						remove_idea = GER_hyper_inflation
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+							has_completed_focus = GER_renewed_unemployment_benefits
+							has_completed_focus = GER_encourage_ruhr_resistance
+						}
+					}
+					swap_ideas = {
+						add_idea = GER_hyper_inflation_4
+						remove_idea = GER_hyper_inflation
+					}
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = GER_economic_treaty_with_us
+		icon = GFX_focus_chi_mission_to_the_us
+		prerequisite = { focus = GER_the_rentenmark }
+		relative_position_id = GER_buy_back_papiermark
+		x = 0
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_leader = { name = "Wilhelm Marx" }
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			# national spirit awarded to both countries same way the Yug economic thing with the USSR works
 		}
 	}
 	
@@ -1043,18 +1950,133 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = GER_walther_von_luttwitz
+			hidden_effect = {
+				add_popularity = { ideology = neutrality popularity = -0.10 }
+			}
 		}
 	}
 	
-	shared_focus = GER_restoration_of_the_german_economy
+	focus = {
+		id = GER_call_upon_the_nationale_vereinigung
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = GER_the_kapp_government }
+		relative_position_id = GER_the_kapp_government
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = GER_waldemar_pabst
+			add_ideas =	GER_erich_ludendorff
+			add_ideas = GER_traugott_von_jagow
+		}
+	}
+	
+	focus = {
+		id = GER_redeploy_jagow_police
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = GER_call_upon_the_nationale_vereinigung }
+		relative_position_id = GER_call_upon_the_nationale_vereinigung
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = {
+				GER_jagow_police
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_align_the_freikorps
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = GER_redeploy_jagow_police }
+		prerequisite = { focus = GER_reorganisation }
+		mutually_exclusive = { focus = GER_outlaw_the_freikorps }
+		relative_position_id = GER_call_upon_the_nationale_vereinigung
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_freikorps_aligned
+				remove_idea = GER_freikorps_2
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_consolidate_kapp_government
+		icon = GFX_focus_GER_consolidate_kapp_government
+		prerequisite = { focus = GER_align_the_freikorps }
+		relative_position_id = GER_align_the_freikorps
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			neutrality > 0.7
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			load_focus_tree = GER_kapp_focus
+		}
+	}
 	
 	### FOKKER
 	
 	focus = {
 		id = GER_arrest_anthony_fokker
 		icon = GFX_goal_generic_demand_territory
-		x = 0
-		y = 0
+		prerequisite = { focus = GER_truppenamt }
+		relative_position_id = GER_truppenamt
+		x = -1
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 90
@@ -1113,36 +2135,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_prepare_to_break_versailles
-		icon = GFX_goal_generic_forceful_treaty
-		relative_position_id = GER_arrest_anthony_fokker
-		x = 2
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 90
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			
-		}
-		
-		bypass = {
-		}
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
 		id = GER_permit_fokker_to_operate
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = GER_seize_fokker }
-		prerequisite = { focus = GER_prepare_to_break_versailles }
 		relative_position_id = GER_arrest_anthony_fokker
-		x = 0
+		x = -1
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -1162,6 +2159,143 @@ focus_tree = {
 			set_country_flag = GER_allowed_fokker_to_operate
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = GER_fokker
+		}
+	}
+	
+	### Engineering
+	
+	focus = {
+		id = GER_the_electrical_telegraph
+		icon = GFX_focus_generic_electrical_telegraph
+		x = 0
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = electrical_telegraph
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_the_telephone
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = GER_the_electrical_telegraph }
+		relative_position_id = GER_the_electrical_telegraph
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = telephone
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_the_teleprinter
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = GER_the_telephone }
+		relative_position_id = GER_the_electrical_telegraph
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = teleprinter
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_deutsche_reichseisenbahnen
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GER_a_new_constitution }
+		relative_position_id = GER_a_new_constitution
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			764 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			61 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			56 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			50 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			5 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,3 @@
+technology_categories = {
+	band_tech
+}

@@ -69,6 +69,20 @@ set_war_support = 0.1
 	set_party_name = { ideology = communism long_name = ENG_british_socialist_party_long name = ENG_british_socialist_party }
 	set_party_name = { ideology = fascism long_name = ENG_british_empire_union_long name = ENG_british_empire_union }
 	set_party_name = { ideology = neutrality long_name = ENG_national_party name = ENG_national_party }
+	
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		set_autonomy = {
+			target = EGY
+			autonomous_state = autonomy_colony
+			freedom_level = 0.30
+		}
+		else = {
+			puppet = EGY
+		}
+	}
 }
 
 # Starting tech
@@ -319,6 +333,7 @@ create_country_leader = {
 	add_to_faction = AST
 	add_to_faction = NZL
 	add_to_faction = SAF
+	add_to_faction = EGY
 
 	give_military_access = RAJ
 	add_to_faction = RAJ		# Must be after puppet

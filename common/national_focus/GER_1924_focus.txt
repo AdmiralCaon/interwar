@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 10
+			add = 12
 			tag = GER
 		}
 	}
@@ -14,6 +14,299 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1100 }
 	
-	shared_focus = GER_restoration_of_the_german_economy
+	focus = {
+		id = GER_emminger_reforms
+		icon = GFX_focus_GER_judicial_system
+		x = 8
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = -0.10 }
+			add_political_power = 50
+		}
+	}
 	
+	focus = {
+		id = GER_rise_of_hitler
+		icon = GFX_focus_GER_rise_of_hitler
+		prerequisite = { focus = GER_emminger_reforms }
+		relative_position_id = GER_emminger_reforms
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			# unlock decision category for the rise of Hitler
+		}
+	}
+	
+	focus = {
+		id = GER_treaty_of_friendship_with_turkey
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = GER_emminger_reforms }
+		relative_position_id = GER_emminger_reforms
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			# improve relations with Turkey
+		}
+	}
+	
+	focus = {
+		id = GER_the_reichsmark
+		icon = GFX_focus_generic_monetary_focus
+		x = 12
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_leader = { name = "Wilhelm Marx" }
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = GER_hyper_inflation
+				}
+				remove_ideas = { GER_hyper_inflation }
+			}
+			if = {
+				limit = {
+					has_idea = GER_hyper_inflation_1
+				}
+				remove_ideas = { GER_hyper_inflation_1 }
+			}if = {
+				limit = {
+					has_idea = GER_hyper_inflation_2
+				}
+				remove_ideas = { GER_hyper_inflation_2 }
+			}if = {
+				limit = {
+					has_idea = GER_hyper_inflation_3
+				}
+				remove_ideas = { GER_hyper_inflation_3 }
+			}if = {
+				limit = {
+					has_idea = GER_hyper_inflation_4
+				}
+				remove_ideas = { GER_hyper_inflation_4 }
+			}
+			#new currency idea gives 20% consumer
+			#new currency confusion idea for 365 days 15% consumer
+		}
+	}
+	
+	focus = {
+		id = GER_cut_civil_servants
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = GER_the_reichsmark }
+		relative_position_id = GER_the_reichsmark
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_leader = { name = "Wilhelm Marx" }
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			# takes away 5% consumer
+		}
+	}
+	
+	focus = {
+		id = GER_raise_taxes
+		icon = GFX_focus_generic_monetary_focus
+		prerequisite = { focus = GER_the_reichsmark }
+		relative_position_id = GER_the_reichsmark
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_leader = { name = "Wilhelm Marx" }
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			# takes away 5% consumer
+		}
+	}
+	
+	focus = {
+		id = GER_deal_with_bavaria
+		icon = GFX_focus_GER_deal_with_bavaria
+		x = 3
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_idea = GER_bavarian_strong_rightwing
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = GER_meet_with_eugen_von_knilling
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = GER_deal_with_bavaria }
+		relative_position_id = GER_deal_with_bavaria
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			country_event = { id = iw_germany.17 days = 1 }
+		}
+	}
+	
+	focus = {
+		id = GER_disband_volksgerichte
+		icon = GFX_focus_GER_judicial_system
+		prerequisite = { focus = GER_meet_with_eugen_von_knilling }
+		relative_position_id = GER_meet_with_eugen_von_knilling
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_idea = GER_bavarian_strong_rightwing_1
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = GER_bavarian_strong_rightwing_2
+				remove_idea = GER_bavarian_strong_rightwing_1
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_deutsche_reichsbahn_gesellschaft
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GER_meet_with_eugen_von_knilling }
+		relative_position_id = GER_meet_with_eugen_von_knilling
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+			
+		bypass = {
+		}
+
+		completion_reward = {
+			52 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			53 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
 }

@@ -4,7 +4,7 @@ ideas = {
 		GER_friedrich_ebert = {
 					
 			allowed = {
-				original_tag = "ITA"
+				original_tag = "GER"
 			}
 			
 			picture = friedrich_ebert
@@ -16,13 +16,28 @@ ideas = {
 			}
 		}
 		
+		GER_erich_ludendorff = {
+
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = erich_ludendorff
+			
+			removal_cost = -1
+			
+			traits = {
+				the_retired_warhero
+			}
+		}
+		
 		GER_hyper_inflation = {
 			
 			allowed = {
 				original_tag = "GER"
 			}
 			
-			picture = chi_hyper_inflation3
+			picture = chi_hyper_inflation
 			
 			removal_cost = -1
 			
@@ -38,7 +53,7 @@ ideas = {
 				original_tag = "GER"
 			}
 			
-			picture = chi_hyper_inflation5
+			picture = chi_hyper_inflation2
 			
 			removal_cost = -1
 			
@@ -54,12 +69,12 @@ ideas = {
 				original_tag = "GER"
 			}
 			
-			picture = chi_hyper_inflation5
+			picture = chi_hyper_inflation3
 			
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.38
+				consumer_goods_factor = 0.42
 				industrial_capacity_factory = -0.25
 			}
 		}
@@ -70,12 +85,12 @@ ideas = {
 				original_tag = "GER"
 			}
 			
-			picture = chi_hyper_inflation5
+			picture = chi_hyper_inflation4
 			
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.35
+				consumer_goods_factor = 0.45
 				industrial_capacity_factory = -0.25
 			}
 		}
@@ -91,7 +106,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.40
+				consumer_goods_factor = 0.50
 				industrial_capacity_factory = -0.25
 			}
 		}
@@ -107,11 +122,86 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				fascism_drift = 0.01
+				neutrality_drift = 0.01
+				communism_acceptance = -70
+				democratic_acceptance = -70
+				stability_factor = -0.20
+				high_command_cost_factor = 0.15
+				air_chief_cost_factor = 0.15
+				army_chief_cost_factor = 0.15
+				navy_chief_cost_factor = 0.15
+				theorist_cost_factor = 0.15
+			}
+		}
+		
+		GER_freikorps_2 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = prc_low_popular_support3
+			
+			removal_cost = -1
+			
+			modifier = {
 				fascism_drift = 0.1
 				neutrality_drift = 0.2
 				communism_acceptance = -70
 				democratic_acceptance = -70
 				stability_factor = -0.20
+			}
+		}
+		
+		GER_freikorps_aligned = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = prc_low_popular_support2
+			
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.2
+				fascism_acceptance = 70
+				communism_acceptance = -70
+				democratic_acceptance = -70
+			}
+		}
+		
+		GER_freikorps_outlawed = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = prc_low_popular_support
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_acceptance = -70
+				democratic_acceptance = -70
+				fascism_acceptance = 70
+				stability_factor = -0.20
+			}
+		}
+		
+		GER_truppenamt_idea = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = prc_low_popular_support3
+			
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain = 0.01
 			}
 		}
 		
@@ -217,6 +307,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -239,6 +330,30 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
+			}
+		}
+		
+		GER_treaty_of_versailles_national_disarmament_law_appease_the_west = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.45
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -261,6 +376,30 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
+			}
+		}
+		
+		GER_treaty_of_versailles_national_disarmament_law_rathenau_appease_the_west = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+				conscription = -0.007
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -283,6 +422,30 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
+			}
+		}
+		
+		GER_treaty_of_versailles_national_disarmament_law_rathenau_moratorium_appease_the_west = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+				conscription = -0.007
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -305,6 +468,30 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
+			}
+		}
+		
+		GER_treaty_of_versailles_national_disarmament_law_moratorium_appease_the_west = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -327,6 +514,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -349,6 +537,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -371,6 +560,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -393,6 +583,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -415,6 +606,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -437,6 +629,30 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_appease_the_west = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -459,6 +675,30 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_appease_the_west = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.40
+				conscription = -0.007
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -481,6 +721,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -503,6 +744,30 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_moratorium_appease_the_west = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.35
+				conscription = -0.008
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -525,6 +790,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -547,6 +813,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -569,6 +836,30 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
+			}
+		}
+		
+		GER_treaty_of_versailles_concessions_national_disarmament_law_rathenau_moratorium_appease_the_west = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = GER_treaty_of_versailles
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.30
+				conscription = -0.007
+				production_speed_arms_factory_factor = -0.8
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -591,6 +882,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
+				research_time_factor = 0.10
 			}
 		}
 		
@@ -839,6 +1131,21 @@ ideas = {
 			}
 		}
 		
+		GER_jugendbund = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_fascism_drift_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.05
+			}
+		}
+		
 		GER_bavarian_unrest = {
 			
 			allowed = {
@@ -851,6 +1158,56 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
+			}
+		}
+		
+		GER_bavarian_strong_rightwing = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_disjointed_government
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.01
+				stability_factor = -0.1
+				fascism_drift = 0.04
+				political_advisor_cost_factor = 0.1
+			}
+		}
+		
+		GER_bavarian_strong_rightwing_1 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_disjointed_government
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.01
+				stability_factor = -0.1
+				political_advisor_cost_factor = 0.1
+			}
+		}
+		
+		GER_bavarian_strong_rightwing_2 = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_disjointed_government
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = 0.1
 			}
 		}
 		
@@ -886,6 +1243,52 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.10
 				stability_factor = -0.10
 			}
+		}
+		
+		GER_jagow_police = {
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = generic_spy_political
+			
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.05
+				stability_factor = 0.1
+			}
+		}
+	}
+	
+	political_advisor = {
+		GER_waldemar_pabst = {
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_country_leader = { name = "Wolfgang Kapp" }
+			}
+			
+			traits = { retired_general anti_communist }
+		}
+		
+		GER_traugott_von_jagow = {
+			
+			picture = generic_political_advisor_europe_5
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				has_country_leader = { name = "Wolfgang Kapp" }
+			}
+			
+			traits = { prince_of_terror }
 		}
 	}
 	
@@ -950,6 +1353,26 @@ ideas = {
 				fighter_equipment = {
 					maximum_speed = 0.1 air_agility = 0.1 reliability = 0.1
 				}
+			}
+		}
+	}	
+	army_chief = {
+
+		GER_walther_von_luttwitz = {
+			
+			picture = walther_von_luttwitz
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			available = {
+				has_country_leader = { name = "Wolfgang Kapp" }
+			}
+				
+			traits = { army_chief_defensive_2 }			
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}

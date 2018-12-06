@@ -1,6 +1,16 @@
 spriteTypes = {	
 
 	SpriteType = {
+		name = "GFX_focus_GER_deal_with_bavaria"
+		texturefile = "gfx/interface/goals/focus_GER_deal_with_bavaria.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_rise_of_hitler"
+		texturefile = "gfx/interface/goals/focus_GER_rise_of_hitler.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_focus_GER_weimar_germany"
 		texturefile = "gfx/interface/goals/focus_GER_weimar_germany.dds"
 	}
@@ -17,7 +27,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_focus_generic_monetary_focus"
-		texturefile = "gfx/interface/goals/focus_monatery_focus.dds"
+		texturefile = "gfx/interface/goals/focus_monetary_focus.dds"
 	}
 
 	SpriteType = {
@@ -73,5 +83,40 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_GER_military_decree"
 		texturefile = "gfx/interface/goals/focus_GER_military_decree.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_vorlaufiges_reichsmarine"
+		texturefile = "gfx/interface/goals/focus_GER_vorlaufiges_reichsmarine.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_dornier_do_j"
+		texturefile = "gfx/interface/goals/focus_GER_dornier_do_j.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_naval_bomber"
+		texturefile = "gfx/interface/goals/focus_naval_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_consolidate_kapp_government"
+		texturefile = "gfx/interface/goals/focus_GER_consolidate_kapp_government.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_print_volkischer_beobachter"
+		texturefile = "gfx/interface/goals/focus_GER_print_volkischer_beobachter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_electrical_telegraph"
+		texturefile = "gfx/interface/goals/focus_electrical_telegraph.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_jugendbund_der_nsdap"
+		texturefile = "gfx/interface/goals/focus_GER_jugendbund_der_nsdap.dds"
 	}
 }

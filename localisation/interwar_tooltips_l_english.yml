@@ -12,3 +12,5 @@
  french_occupied_ruhr:0 "§Y[FRA.GetName]§! has occupied the Ruhr."
  france_occupies_the_ruhr:0 "§Y[FRA.GetName]§! will occupy the Ruhr area."
  france_killed_the_freebooter:0 "§YAlbert Leo Schlageter§! has been executed."
+ france_left_the_ruhr:0 "§YFrance§! has left the Ruhr."
+ given_asylum_to_wilhelm_iii:0 "Allows §YWilhelm III§! to return to §Y[GER.GetNameDef]§!."

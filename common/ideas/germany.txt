@@ -1927,6 +1927,13 @@ ideas = {
 				synth_resources = 0.1
 			}
 			
+			available = {
+				custom_trigger_tooltip = { 
+					tooltip = company_has_been_founded
+					has_country_flag = GER_ig_farben_founded
+				}
+			}
+			
 			traits = { refinery_concern }
 			
 			ai_will_do = {

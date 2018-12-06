@@ -2,18 +2,21 @@ technologies = {
 	
 	@1918 = 0
 	@1922 = 2
+	@1924 = 4
 	@1926 = 6
+	@1928 = 8
 	@1930 = 10
-	@1936 = 24
-	@1938 = 26
-	@1939 = 28
-	@1940 = 30
-	@1941 = 32
-	@1942 = 34
-	@1943 = 36
-	@1944 = 38
-	@1945 = 40
-	@1946 = 42
+	@1933 = 12
+	@1936 = 14
+	@1938 = 16
+	@1939 = 18
+	@1940 = 20
+	@1941 = 22
+	@1942 = 24
+	@1943 = 26
+	@1944 = 28
+	@1945 = 30
+	@1946 = 32
 
 	infantry_weapons = {
 
@@ -28,13 +31,41 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_weapons_1922
 			research_cost_coeff = 1
-		}		
+		}	
+
+		path = {
+			leads_to_tech = infantry_scope
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	infantry_scope = {
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 1 }
+		}
+		
+		infantry = {
+			hard_attack = 0.05
+			breakthrough = 0.05
 		}
 		
 		categories = {
@@ -80,7 +111,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = infantry_weapons_1930
+			leads_to_tech = early_support_weapons
 			research_cost_coeff = 1
 		}		
 
@@ -107,7 +138,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = infantry_weapons1
+			leads_to_tech = basic_support_weapons
 			research_cost_coeff = 1
 		}		
 
@@ -124,6 +155,122 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	early_support_weapons = {
+	
+		path = {
+			leads_to_tech = infantry_weapons_1930
+			research_cost_coeff = 1
+		}		
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		cavalry = {
+			soft_attack = 0.05
+		}
+		
+		motorized = {
+			soft_attack = 0.05
+		}
+		
+		mechanized = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 1.5
+		start_year = 1928
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1928 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+	
+	basic_support_weapons = {
+	
+		path = {
+			leads_to_tech = infantry_weapons1
+			research_cost_coeff = 1
+		}		
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		cavalry = {
+			soft_attack = 0.05
+		}
+		
+		motorized = {
+			soft_attack = 0.05
+		}
+		
+		mechanized = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 1.5
+		start_year = 1933
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1933 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
 		}
 	}
 	
@@ -190,7 +337,7 @@ technologies = {
 		path = {
 			leads_to_tech = improved_infantry_weapons
 			research_cost_coeff = 1
-		}		
+		}	
 
 		research_cost = 1.5
 		start_year = 1938
@@ -240,7 +387,7 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_at
 			research_cost_coeff = 1
-		}		
+		}
 
 		research_cost = 2
 		start_year = 1939
@@ -646,10 +793,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1918
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 0 y = @1918 }
 		}
 		
 		categories = {
@@ -765,10 +912,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1918
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 0 y = @1918 }
 		}
 		
 		categories = {
@@ -1209,7 +1356,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = support_weapons2
+			leads_to_tech = support_weapons1924
 			research_cost_coeff = 1
 		}
 
@@ -1256,6 +1403,164 @@ technologies = {
 		}
 	}
 	
+	support_weapons1924 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = support_weapons1930
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1924
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1924 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 15
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
+				factor = 2
+				date > "1924.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1925.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1926.1.1"
+			}
+		}
+	}
+	
+	support_weapons1930 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = support_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1930
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1930 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 15
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
+				factor = 2
+				date > "1930.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1931.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1932.1.1"
+			}
+		}
+	}
+	
 	support_weapons2 = {
 
 		infantry = {
@@ -1293,10 +1598,10 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1938
+		start_year = 1936
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1938 }
+			position = { x = 0 y = @1936 }
 		}
 		
 		categories = {
