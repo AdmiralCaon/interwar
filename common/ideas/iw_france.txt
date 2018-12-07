@@ -1,5 +1,21 @@
 ideas = {
 	country = {
+	
+		FRA_raymond_poincare = {
+					
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = raymond_poincare
+			
+			removal_cost = -1
+			
+			traits = {
+				poincare_la_guerre			
+			}
+		}
+	
 		FRA_rebellion_in_the_ruhr = {
 			
 			allowed = {

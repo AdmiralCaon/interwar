@@ -338,7 +338,7 @@ country_event = {
 	}
 	
 	option = {
-		name = iw_germany.16.a
+		name = iw_germany.17.a
 		
 		add_ideas = { GER_bavarian_strong_rightwing }
 	}
@@ -359,5 +359,18 @@ country_event = {
 			add_idea = GER_bavarian_strong_rightwing_1
 			remove_idea = GER_bavarian_strong_rightwing
 		}
+	}
+}
+
+# If Reichstag is dissolved election of '24
+country_event = {
+	id = iw_germany.18
+	title = iw_germany.18.t
+	desc = iw_germany.18.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.18.a
 	}
 }

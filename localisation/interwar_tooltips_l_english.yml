@@ -14,3 +14,5 @@
  france_killed_the_freebooter:0 "§YAlbert Leo Schlageter§! has been executed."
  france_left_the_ruhr:0 "§YFrance§! has left the Ruhr."
  given_asylum_to_wilhelm_iii:0 "Allows §YWilhelm III§! to return to §Y[GER.GetNameDef]§!."
+ disband_reichstag:0 "§RDisbanding the Reichstag will invalidate the result of the next election!§!"
+ communist_majority_tooltip:0 "Has communist majority"

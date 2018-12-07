@@ -19,3 +19,10 @@ company_is_active = {
 		has_country_flag = wright_disbanded
 	}
 }
+
+no_political_majority = {
+	democratic < 0.5
+	fascism < 0.5
+	communism < 0.5
+	neutrality < 0.5
+}

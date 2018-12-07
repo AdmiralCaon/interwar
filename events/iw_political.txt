@@ -1,0 +1,118 @@
+﻿###########################
+# Interwar Germany Events
+###########################
+
+add_namespace = iw_political
+
+# Neutrality victory on election
+country_event = {
+	id = iw_political.1
+	title = iw_political.1.t
+	desc = iw_political.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_political.1.a
+		
+		if = {
+			limit = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+# Democratic victory on election
+country_event = {
+	id = iw_political.2
+	title = iw_political.2.t
+	desc = iw_political.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_political.2.a
+		
+		if = {
+			limit = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+# Communist victory on election
+country_event = {
+	id = iw_political.3
+	title = iw_political.3.t
+	desc = iw_political.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_political.3.a
+		
+		if = {
+			limit = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+# Fascist victory on election
+country_event = {
+	id = iw_political.4
+	title = iw_political.4.t
+	desc = iw_political.4.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_political.4.a
+		
+		if = {
+			limit = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+# Insufficient majority on election
+country_event = {
+	id = iw_political.5
+	title = iw_political.5.t
+	desc = iw_political.5.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_political.5.a
+	}
+}

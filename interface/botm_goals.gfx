@@ -1,6 +1,11 @@
 spriteTypes = {	
 
 	SpriteType = {
+		name = "GFX_focus_generic_election"
+		texturefile = "gfx/interface/goals/focus_election.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_focus_GER_deal_with_bavaria"
 		texturefile = "gfx/interface/goals/focus_GER_deal_with_bavaria.dds"
 	}

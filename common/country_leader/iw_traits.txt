@@ -54,4 +54,19 @@ leader_traits = {
 		communism_acceptance = -25
 		communism_drift = -0.05
 	}
+	
+	poincare_la_guerre = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "GER"			
+			value = 200
+		}
+		ai_focus_aggressive_factor = 0.2
+		generate_wargoal_tension = 0.80
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
