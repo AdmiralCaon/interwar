@@ -1,0 +1,36 @@
+treaty_of_saint_germain = {
+	impose_treaty_of_saint_germain = {
+
+		icon = generic_nationalism
+
+		visible = {
+			original_tag = FRA
+			date > 1919.5.1
+			date < 1919.9.10
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+			AUS = {
+				drop_cosmetic_tag = yes
+			}
+			add_political_power = 50
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			
+		}
+
+
+		days_remove = 60
+
+		cost = 50
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.6
+			}
+		}
+	}
+}

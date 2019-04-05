@@ -11,6 +11,8 @@ bookmarks = {
 			history = "FRA_BRIDGE_OF_THE_MILLENNIUM_DESC"
 			ideology = democratic
 			ideas = {
+				FRA_dissatisfaction_over_versailles
+				FRA_les_villages_detruits
 			}
 			focuses = {
 			}

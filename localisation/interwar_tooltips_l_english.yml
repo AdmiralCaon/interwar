@@ -16,3 +16,6 @@
  given_asylum_to_wilhelm_iii:0 "Allows §YWilhelm III§! to return to §Y[GER.GetNameDef]§!."
  disband_reichstag:0 "§RDisbanding the Reichstag will invalidate the result of the next election!§!"
  communist_majority_tooltip:0 "Has communist majority"
+ president_position_vacant:0 "Presidential office is vacant"
+ election_being_held:0 "§YElections§! will be held in §Y[Root.GetName]§!."
+ election_of_president_deschanel:0 "§YPaul Deschanel§! becomes president of [Root.GetName]."

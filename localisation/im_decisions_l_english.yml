@@ -1,0 +1,4 @@
+﻿l_english:
+ treaty_of_saint_germain:0 "Treaty of Saint-Germain-en-Laye"
+ treaty_of_saint_germain_desc:0 "The Treaty of Saint-Germain-en-Laye is the peace treaty we stand to impose on [AUS.GetName] as a result of their defeat in the Great War. We can choose not to impose it on [AUS.GetName], but then no doubt that [ITA.GetNameDef] and [ENG.GetNameDef] will."
+ impose_treaty_of_saint_germain:0 "Impose Treaty of Saint-Germain-en-Laye"

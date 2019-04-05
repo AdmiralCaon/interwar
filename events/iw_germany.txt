@@ -374,3 +374,47 @@ country_event = {
 		name = iw_germany.18.a
 	}
 }
+
+# Friedrich dead
+country_event = {
+	id = iw_germany.19
+	title = iw_germany.19.t
+	desc = iw_germany.19.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		date > 1925.1.1
+	}
+	
+	option = {
+		name = iw_germany.19.a
+		
+		remove_ideas = GER_friedrich_ebert
+		set_country_flag = president_position_vacant
+	}
+}
+
+# Friedrich dead
+country_event = {
+	id = iw_germany.20
+	title = iw_germany.20.t
+	desc = iw_germany.20.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = iw_germany.20.a
+		
+		add_ideas = GER_paul_von_hindenburg
+		clr_country_flag = president_position_vacant
+	}
+	
+	option = {
+		name = iw_germany.20.b
+		
+		add_ideas = GER_wilhelm_marx
+		clr_country_flag = president_position_vacant
+}

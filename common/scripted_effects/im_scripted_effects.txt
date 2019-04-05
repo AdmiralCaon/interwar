@@ -397,34 +397,37 @@ escalate_treaty_of_versailles = {
 
 ### Election Results
 election = {
-	if = {
-		limit = {
-			neutrality > 0.5
+	custom_effect_tooltip = election_being_held
+	hidden_effect = {
+		if = {
+			limit = {
+				neutrality > 0.5
+			}
+			country_event = { id = iw_political.1 days = 1 }
 		}
-		country_event = { id = iw_political.1 days = 1 }
-	}
-	if = {
-		limit = {
-			democratic > 0.5
+		if = {
+			limit = {
+				democratic > 0.5
+			}
+			country_event = { id = iw_political.2 days = 1 }
 		}
-		country_event = { id = iw_political.2 days = 1 }
-	}
-	if = {
-		limit = {
-			communism > 0.5
+		if = {
+			limit = {
+				communism > 0.5
+			}
+			country_event = { id = iw_political.3 days = 1 }
 		}
-		country_event = { id = iw_political.3 days = 1 }
-	}
-	if = {
-		limit = {
-			fascism > 0.5
+		if = {
+			limit = {
+				fascism > 0.5
+			}
+			country_event = { id = iw_political.4 days = 1 }
 		}
-		country_event = { id = iw_political.4 days = 1 }
-	}
-	if = {
-		limit = {
-			no_political_majority = yes
+		if = {
+			limit = {
+				no_political_majority = yes
+			}
+			country_event = { id = iw_political.5 days = 1 }
 		}
-		country_event = { id = iw_political.5 days = 1 }
 	}
 }

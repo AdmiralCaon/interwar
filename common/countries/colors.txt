@@ -471,6 +471,7 @@ ISR = {
 	color = rgb { 152  130  191 }
 	color_ui = rgb { 152  130  191 }
 }
+
 RUS = {
 	color = rgb { 67 127 63 }
 	color_ui = rgb { 87 165 82 }
@@ -482,6 +483,14 @@ HSR = {
 SAA = {
 	color = rgb { 181 190 255 }
 	color_ui = rgb { 181 190 255 }
+}
+RHE = {
+	color = rgb { 222 115 198 }
+	color_ui = rgb { 222 115 198 }
+}
+MEM = {
+	color = rgb { 0 255 144 }
+	color_ui = rgb { 0 255 144 }
 }
 
 D01 = {

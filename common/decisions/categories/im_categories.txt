@@ -1,0 +1,10 @@
+treaty_of_saint_germain = {
+
+	icon = generic_political_actions
+	
+	picture = GFX_decision_cat_picture_fra_treaty_of_saint_germain
+
+	allowed = {
+		has_dlc = "Waking the Tiger"
+	}
+}

@@ -8,6 +8,8 @@ set_war_support = 0.15
 
 	add_ideas = {
 		FRA_raymond_poincare
+		FRA_dissatisfaction_over_versailles
+		FRA_les_villages_detruits
 	}
 
 	oob = "FRA_1919"

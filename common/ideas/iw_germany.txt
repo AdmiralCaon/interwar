@@ -16,6 +16,36 @@ ideas = {
 			}
 		}
 		
+		GER_wilhelm_marx = {
+		
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = wilhelm_marx
+			
+			removal_cost = -1
+			
+			traits = {
+				# idk			
+			}
+		}
+		
+		GER_paul_von_hindenburg = {
+		
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			picture = paul_von_hindenburg
+			
+			removal_cost = -1
+			
+			traits = {
+				# idk			
+			}
+		}
+		
 		GER_erich_ludendorff = {
 
 			allowed = {
@@ -307,7 +337,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -330,7 +360,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor  = -0.10
 			}
 		}
 		
@@ -353,7 +383,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -376,7 +406,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -399,7 +429,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -422,7 +452,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -445,7 +475,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -468,7 +498,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -491,7 +521,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -514,7 +544,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -537,7 +567,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -560,7 +590,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -583,7 +613,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -606,7 +636,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -629,7 +659,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -652,7 +682,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -675,7 +705,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -698,7 +728,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -721,7 +751,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -744,7 +774,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -767,7 +797,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -790,7 +820,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -813,7 +843,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -836,7 +866,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -859,7 +889,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		
@@ -882,7 +912,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.5
 				production_factory_max_efficiency_factor = -0.25
 				production_factory_efficiency_gain_factor = -0.25
-				research_time_factor = 0.10
+				research_speed_factor = -0.10
 			}
 		}
 		

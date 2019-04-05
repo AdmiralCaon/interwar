@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 12
+			add = 0
 			tag = GER
 		}
 	}
@@ -128,7 +128,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_1925_election
+		id = GER_1924_election
 		icon = GFX_focus_generic_election
 		prerequisite = { focus = GER_dissolve_the_reichstag focus = GER_emminger_reforms }
 		prerequisite = { focus = GER_disband_volksgerichte focus = GER_deutsche_reichsbahn_gesellschaft }
@@ -159,6 +159,32 @@ focus_tree = {
 					election = yes
 				}
 			}
+		}
+	}
+	
+	focus = {
+		id = GER_1925_presidential_election
+		icon = GFX_focus_generic_election
+		prerequisite = { focus = GER_1924_election }
+		relative_position_id = GER_1924_election
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_country_flag = president_position_vacant
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			country_event = { id = iw_germany.20 days = 1}
 		}
 	}
 	

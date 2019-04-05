@@ -1,3 +1,5 @@
 RUS	= "countries/Russia.txt"
 HSR = "countries/Red Hungary.txt"
 SAA = "countries/Saarland.txt"
+RHE = "countries/Rhenish Republic.txt"
+MEM = "countries/Memelland.txt"
