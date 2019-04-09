@@ -1,0 +1,127 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_focus_generic_election"
+		texturefile = "gfx/interface/goals/focus_election.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_deal_with_bavaria"
+		texturefile = "gfx/interface/goals/focus_GER_deal_with_bavaria.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_rise_of_hitler"
+		texturefile = "gfx/interface/goals/focus_GER_rise_of_hitler.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_weimar_germany"
+		texturefile = "gfx/interface/goals/focus_GER_weimar_germany.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_buy_back_papiermark"
+		texturefile = "gfx/interface/goals/focus_GER_buy_back_papiermark.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_reichstag"
+		texturefile = "gfx/interface/goals/focus_GER_reichstag.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_monetary_focus"
+		texturefile = "gfx/interface/goals/focus_monetary_focus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_commonwealth"
+		texturefile = "gfx/interface/goals/focus_ENG_commonwealth.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ENG_balfour_declaration"
+		texturefile = "gfx/interface/goals/focus_ENG_balfour_declaration.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_peace"
+		texturefile = "gfx/interface/goals/focus_peace.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_stab_in_the_back_myth"
+		texturefile = "gfx/interface/goals/focus_GER_stab_in_the_back_myth.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_fascism"
+		texturefile = "gfx/interface/goals/focus_fascism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_industry_1"
+		texturefile = "gfx/interface/goals/focus_generic_industry_1.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_government"
+		texturefile = "gfx/interface/goals/focus_FRA_government.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_judicial_system"
+		texturefile = "gfx/interface/goals/focus_GER_judicial_system.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_beerhall_conclusion"
+		texturefile = "gfx/interface/goals/focus_GER_beerhall_conclusion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_execute_the_freebooter"
+		texturefile = "gfx/interface/goals/focus_FRA_execute_the_freebooter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_military_decree"
+		texturefile = "gfx/interface/goals/focus_GER_military_decree.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_vorlaufiges_reichsmarine"
+		texturefile = "gfx/interface/goals/focus_GER_vorlaufiges_reichsmarine.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_dornier_do_j"
+		texturefile = "gfx/interface/goals/focus_GER_dornier_do_j.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_naval_bomber"
+		texturefile = "gfx/interface/goals/focus_naval_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_consolidate_kapp_government"
+		texturefile = "gfx/interface/goals/focus_GER_consolidate_kapp_government.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_print_volkischer_beobachter"
+		texturefile = "gfx/interface/goals/focus_GER_print_volkischer_beobachter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_generic_electrical_telegraph"
+		texturefile = "gfx/interface/goals/focus_electrical_telegraph.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_GER_jugendbund_der_nsdap"
+		texturefile = "gfx/interface/goals/focus_GER_jugendbund_der_nsdap.dds"
+	}
+}

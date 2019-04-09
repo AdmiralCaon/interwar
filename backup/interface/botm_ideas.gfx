@@ -1,0 +1,77 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_friedrich_ebert"
+		texturefile = "gfx/interface/ideas/idea_friedrich_ebert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_raymond_poincare"
+		texturefile = "gfx/interface/ideas/idea_raymond_poincare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_armando_diaz"
+		texturefile = "gfx/interface/ideas/idea_armando_diaz.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ansaldo"
+		texturefile = "gfx/interface/ideas/idea_ansaldo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_benetti"
+		texturefile = "gfx/interface/ideas/idea_benetti.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_curtiss_wright"
+		texturefile = "gfx/interface/ideas/idea_curtiss_wright.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_curtiss"
+		texturefile = "gfx/interface/ideas/idea_curtiss.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_huff_daland"
+		texturefile = "gfx/interface/ideas/idea_huff_daland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_wright"
+		texturefile = "gfx/interface/ideas/idea_wright.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_white_supremacists"
+		texturefile = "gfx/interface/ideas/idea_white_supremacists.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fokker"
+		texturefile = "gfx/interface/ideas/idea_fokker.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_handley_page"
+		texturefile = "gfx/interface/ideas/idea_handley_page.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_treaty_of_versailles"
+		texturefile = "gfx/interface/ideas/idea_GER_treaty_of_versailles.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GER_waldemar_pabst"
+		texturefile = "gfx/interface/ideas/idea_waldemar_pabst.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_erich_ludendorff"
+		texturefile = "gfx/interface/ideas/idea_erich_ludendorff.dds"
+	}
+}

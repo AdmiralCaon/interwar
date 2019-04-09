@@ -1,0 +1,511 @@
+focus_tree = {
+	id = FRA_1919_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 11
+			tag = FRA
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = FRA_aftermath_of_versailles
+		icon = GFX_focus_FRA_government
+		x = 9
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = FRA_defend_the_treaty_of_versailles
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = FRA_aftermath_of_versailles }
+		relative_position_id = FRA_aftermath_of_versailles
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = FRA_dissatisfaction_over_versailles_1
+				remove_idea = FRA_dissatisfaction_over_versailles
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_consolidate_right_democrats
+		icon = GFX_focus_generic_self_management
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = FRA_defend_the_treaty_of_versailles }
+		relative_position_id = FRA_aftermath_of_versailles
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			set_party_name = {
+				ideology = democratic 
+				long_name = FRA_national_bloc
+				name = FRA_national_bloc
+			}
+			add_popularity = { ideology = democratic popularity = 0.05 }
+		}
+	}
+	
+	focus = {
+		id = FRA_1919_legislative_election
+		icon = GFX_focus_generic_election
+		x = 0
+		y = 3
+		cost = 10
+		prerequisite = { focus = FRA_consolidate_right_democrats }
+		relative_position_id = FRA_aftermath_of_versailles
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			election = yes
+		}
+	}
+	
+	focus = {
+		id = FRA_occupy_memel
+		icon = GFX_focus_generic_concessions
+		x = -2
+		y = 4
+		cost = 10
+		prerequisite = { focus = FRA_1919_legislative_election }
+		relative_position_id = FRA_aftermath_of_versailles
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			MEM = {
+				transfer_state = 188
+			}
+			FRA = {
+				set_autonomy = { target = MEM autonomy_state = autonomy_puppet }
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_establish_the_saar_basic
+		icon = GFX_focus_generic_concessions
+		x = 2
+		y = 4
+		cost = 10
+		prerequisite = { focus = FRA_1919_legislative_election }
+		relative_position_id = FRA_aftermath_of_versailles
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			SAA = {
+				transfer_state = 763
+			}
+			FRA = {
+				set_autonomy = { target = SAA autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_resignation_of_clemenceau
+		icon = GFX_goal_generic_demand_territory
+		x = 1
+		y = 2
+		cost = 2
+		prerequisite = { focus = FRA_1919_legislative_election }
+		relative_position_id = FRA_1919_legislative_election
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			set_party_name = {
+				ideology = democratic 
+				long_name = independent
+				name = independent
+			}
+			create_country_leader = {
+				name = "Alexandre Millerand"
+				desc = "POLITICS_ALEXANDRE_MILLERAND_DESC"
+				picture = "Portrait_France_Alexandre_Millerand.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					the_editor
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = FRA_resignation_of_poincare
+		icon = GFX_goal_generic_dangerous_deal
+		x = -1
+		y = 2
+		cost = 2
+		prerequisite = { focus = FRA_1919_legislative_election }
+		relative_position_id = FRA_1919_legislative_election
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = election_of_president_deschanel
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = FRA_paul_deschanel
+					remove_idea = FRA_raymond_poincare
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_introduce_streamlined_work_hours
+		icon = GFX_goal_generic_forceful_treaty
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = FRA_resignation_of_clemenceau }
+		prerequisite = { focus = FRA_resignation_of_poincare }
+		relative_position_id = FRA_resignation_of_poincare
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = {
+				FRA_steamlined_shifts
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_resignation_of_alexandre
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 1
+		cost = 2
+		prerequisite = { focus = FRA_introduce_streamlined_work_hours }
+		relative_position_id = FRA_introduce_streamlined_work_hours
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			set_party_name = {
+				ideology = democratic 
+				long_name = FRA_democratic_republican_alliance_long
+				name = FRA_democratic_republican_alliance
+			}
+			create_country_leader = {
+				name = "Georges Leygeus"
+				desc = "POLITICS_GEORGES_LEYGEUS_DESC"
+				picture = "Portrait_France_Georges_Leygeus.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_occupation_of_the_ruhr
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = france_occupies_the_ruhr
+			hidden_effect = {
+				FRA = {
+					transfer_state = 763
+					transfer_state = 42
+					transfer_state = 51
+					transfer_state = 767
+				}
+				763 = {
+					set_demilitarized_zone = no
+				}
+				42 = {
+					set_demilitarized_zone = no
+				}
+				51 = {
+					set_demilitarized_zone = no
+				}
+				767 = {
+					set_demilitarized_zone = no
+				}
+			}
+			GER = {
+				set_country_flag = occupation_of_the_ruhr
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_execute_the_freebooter
+		icon = GFX_focus_FRA_execute_the_freebooter
+		prerequisite = { focus = FRA_occupation_of_the_ruhr }
+		relative_position_id = FRA_occupation_of_the_ruhr
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			has_idea = FRA_rebellion_in_the_ruhr
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			remove_ideas = FRA_rebellion_in_the_ruhr
+			GER = {
+				set_country_flag = france_killed_the_freebooter
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_withdraw_from_the_ruhr
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = FRA_execute_the_freebooter }
+		relative_position_id = FRA_occupation_of_the_ruhr
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			GER = {
+				clr_country_flag = occupation_of_the_ruhr
+				set_country_flag = france_left_the_ruhr
+			}
+		}
+	}
+	
+	
+	### INDUSTRY
+	
+	focus = {
+		id = FRA_economic_recovery_plan
+		icon = GFX_goal_generic_production
+		x = 1
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = FRA_establish_the_national_committee
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = FRA_economic_recovery_plan }
+		relative_position_id = FRA_economic_recovery_plan
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			#reduction on murderous building spirit
+		}
+	}
+	
+	focus = {
+		id = FRA_establish_the_ministry_of_reconstruction
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = FRA_economic_recovery_plan }
+		relative_position_id = FRA_economic_recovery_plan
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 90
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		completion_reward = {
+			#reduction on murderous building spirit
+		}
+	}
+}

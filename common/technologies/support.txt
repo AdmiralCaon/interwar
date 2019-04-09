@@ -1803,6 +1803,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		
 		
@@ -1848,6 +1849,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		path = {
 			leads_to_tech = tech_logistics_company4
@@ -1890,6 +1892,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		path = {
 			leads_to_tech = tech_logistics_company5
@@ -1932,6 +1935,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		path = {
 			leads_to_tech = tech_logistics_company6
@@ -1974,6 +1978,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		path = {
 			leads_to_tech = tech_logistics_company7
@@ -2016,6 +2021,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		path = {
 			leads_to_tech = tech_logistics_company8
@@ -2058,6 +2064,7 @@ technologies = {
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 		
 		research_cost = 1.5
